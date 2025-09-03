@@ -4,7 +4,7 @@ Este repositório reúne todos os projetos, desafios e atividades práticas dese
 
 - **Professora:** Débora Paixão
 - **Instituição:** Instituto PROA
-- **Turma:** [Coloque o nome ou número da sua turma aqui, se tiver]
+- **Turma:** Equipe 1
 - **Ano:** 2025
 
 ## Sobre o Curso
@@ -13,11 +13,4 @@ O objetivo deste curso é nos capacitar com as tecnologias mais modernas de fron
 
 ## Organização
 
-Cada pasta neste repositório representa uma atividade ou um módulo do curso, contendo todo o código-fonte e os recursos necessários.
-
----
-
-[Aqui você pode listar as pastas, como no exemplo anterior]
-- `/semana-01-html-css`
-- `/semana-02-javascript`
-- `/projeto-final-react`
+Cada pasta neste repositório representa uma atividade do curso, contendo todo o código-fonte e os recursos necessários.
