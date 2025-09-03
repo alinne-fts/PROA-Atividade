@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente.
+        let codigo = parseInt(prompt("Digite o código do produto (1, 2 ou 3):"));
+        let quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+        let preco;
+        if (codigo === 1) {
+            preco = 10.00; 
+        } else if (codigo === 2) {
+            preco = 20.00; 
+        } else if (codigo === 3) {
+            preco = 30.00; 
+        } else {
+            document.write("Código de produto inválido.<br>");
+        }
+        if (preco) {
+            let valorTotal = preco * quantidade;
+            document.write("O código do produto é: " + codigo + "<br>");
+            document.write("A quantidade comprada é: " + quantidade + "<br>");
+            document.write("O valor total a ser pago é: " + valorTotal.toFixed(2) + "<br>");
+        }
+
+    </script>
+</body>
+</html>

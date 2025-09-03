@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe.
+        let salarioMinimo = parseFloat(prompt("Digite o valor do salário-mínimo:"));
+        let salarioFuncionario = parseFloat(prompt("Digite o salário do funcionário:"));
+        let quantidadeSalariosMinimos = salarioFuncionario / salarioMinimo;
+        document.write("O salário-mínimo é: " + salarioMinimo + "<br>");
+        document.write("O salário do funcionário é: " + salarioFuncionario + "<br>");
+        document.write("O funcionário recebe " + quantidadeSalariosMinimos.toFixed(2) + " salários-mínimos.<br>");
+        
+
+    </script>
+</body>
+</html>

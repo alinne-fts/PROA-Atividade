@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.
+        let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        let nota3 = parseFloat(prompt("Digite a terceira nota:"));
+        let media = (nota1 + nota2 + nota3) / 3;
+        if (media >= 7) {
+            document.write("Aluno aprovado com média: " + media.toFixed(2) + "<br>");
+        } else {
+            document.write("Aluno reprovado com média: " + media.toFixed(2) + "<br>");
+        }
+        
+
+    </script>
+</body>
+</html>
