@@ -36,7 +36,46 @@
             default:
                 document.write("Opção de prato inválida.<br>");
         }
-
+        switch (sobremesa) {
+            case 1:
+                caloriasSobremesa = 75;
+                break;
+            case 2:
+                caloriasSobremesa = 110;
+                break;
+            case 3:
+                caloriasSobremesa = 170;
+                break;
+            case 4:
+                caloriasSobremesa = 200;
+                break;
+            default:
+                document.write("Opção de sobremesa inválida.<br>");
+        }
+        switch (bebida) {
+            case 1:
+                caloriasBebida = 20;
+                break;
+            case 2:
+                caloriasBebida = 70;
+                break;
+            case 3:
+                caloriasBebida = 100;
+                break;
+            case 4:
+                caloriasBebida = 65;
+                break;
+            default:
+                document.write("Opção de bebida inválida.<br>");
+        }
+        totalCalorias = caloriasPrato + caloriasSobremesa + caloriasBebida;
+        document.write("Total de calorias da refeição: " + totalCalorias + "calorias.<br>");
+        document.write("Calorias do prato: " + caloriasPrato + " calorias.<br>");
+        document.write("Calorias da sobremesa: " + caloriasSobremesa + " calorias.<br>");
+        document.write("Calorias da bebida: " + caloriasBebida + " calorias.<br>");
+        document.write("Obrigado por utilizar nosso sistema de contagem de calorias!");
+        document.write("<br>Volte sempre!");
+        //tem que colocar em formato de tabela 
     </script>
 </body>
 </html>

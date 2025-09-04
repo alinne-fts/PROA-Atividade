@@ -8,6 +8,17 @@
 <body>
     <script>
         //7- Fazer um programa que mostre na tela a média aritmética dos números 8,9 e 7. A média dos números 4, 5 e 6. A soma das duas médias. A média das médias.
+        let num1 = 8, num2 = 9, num3 = 7;
+        let media1 = (num1 + num2 + num3) / 3;
+        document.write("Média dos números 8, 9 e 7: " + media1.toFixed(2) + "<br>");
+        let num4 = 4, num5 = 5, num6 = 6;
+        let media2 = (num4 + num5 + num6) / 3;
+        document.write("Média dos números 4, 5 e 6: " + media2.toFixed(2) + "<br>");
+        let somaMedias = media1 + media2;
+        document.write("Soma das duas médias: " + somaMedias.toFixed(2) + "<br>");
+        let mediaDasMedias = somaMedias / 2;
+        document.write("Média das médias: " + mediaDasMedias.toFixed(2) + "<br>");
+        
 
     </script>
 </body>

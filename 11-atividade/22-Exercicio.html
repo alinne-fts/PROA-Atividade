@@ -8,6 +8,15 @@
 <body>
     <script>
         //22- Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.
+        let countEntreZeroECem = 0;
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseFloat(prompt("Digite o número " + i + ":"));
+            if (numero >= 0 && numero <= 100) {
+                countEntreZeroECem++;
+            }
+        }
+        document.write("Quantidade de números entre 0 e 100: " + countEntreZeroECem + "<br>");
+        
 
     </script>
 </body>

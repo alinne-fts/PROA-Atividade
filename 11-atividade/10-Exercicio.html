@@ -8,6 +8,11 @@
 <body>
     <script>
         //10- Informar um saldo e mostrar na tela o saldo com reajuste de 1.5%.
+        let saldo = parseFloat(prompt("Digite o saldo:"));
+        let reajuste = saldo * 0.015;
+        let saldoReajustado = saldo + reajuste;
+        document.write("Saldo com reajuste de 1.5%: R$ " + saldoReajustado.toFixed(2) + "<br>");
+        
 
     </script>
 </body>

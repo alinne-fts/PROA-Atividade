@@ -8,6 +8,13 @@
 <body>
     <script>
         //15- Escreva um programa que leia a idade de 20 pessoas e exiba a soma das idades.
+        let soma = 0;
+        for (let i = 1; i <= 20; i++) {
+            let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            soma += idade;
+        }
+        document.write("A soma das idades das 20 pessoas é: " + soma + "<br>");
+        
 
     </script>
 </body>

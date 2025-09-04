@@ -8,6 +8,18 @@
 <body>
     <script>
         //18- Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.
+        let nomeMaisNovo = "";
+        let idadeMaisNova = Infinity;
+        for (let i = 1; i <= 10; i++) {
+            let nome = prompt("Digite o nome da pessoa " + i + ":");
+            let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            if (idade < idadeMaisNova) {
+                idadeMaisNova = idade;
+                nomeMaisNovo = nome;
+            }
+        }
+        document.write("A pessoa mais nova é: " + nomeMaisNovo + " com " + idadeMaisNova + " anos.<br>");
+        
 
     </script>
 </body>

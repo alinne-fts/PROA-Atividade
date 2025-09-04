@@ -8,7 +8,46 @@
 <body>
     <script>
         //6- Desenvolva um programa em javascript que leia um número inteiro e mostre na tela o seu antecessor e seu sucessor.
-
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let antecessor = numero - 1;
+        let sucessor = numero + 1;
+        document.write("Número digitado: " + numero + "<br>");
+        document.write("Antecessor: " + antecessor + "<br>");
+        document.write("Sucessor: " + sucessor + "<br>");
+        document.write("Antecessor do antecessor: " + (antecessor - 1) + "<br>");
+        document.write("Sucessor do sucessor: " + (sucessor + 1) + "<br>");
+        document.write("Dobro do número: " + (numero * 2) + "<br>");
+        document.write("Triplo do número: " + (numero * 3) + "<br>");
+        document.write("Metade do número: " + (numero / 2) + "<br>");
+        document.write("Quadrado do número: " + (numero * numero) + "<br>");
+        document.write("Cubo do número: " + (numero * numero * numero) + "<br>");
+        document.write("Raiz quadrada do número: " + Math.sqrt(numero).toFixed(2) + "<br>");
+        document.write("Raiz cúbica do número: " + Math.cbrt(numero).toFixed(2) + "<br>");
+        document.write("Número elevado a 4: " + Math.pow(numero, 4) + "<br>");
+        document.write("Número elevado a 5: " + Math.pow(numero, 5) + "<br>");
+        document.write("Número elevado a 6: " + Math.pow(numero, 6) + "<br>");
+        document.write("Número elevado a 7: " + Math.pow(numero, 7) + "<br>");
+        document.write("Número elevado a 8: " + Math.pow(numero, 8) + "<br>");
+        document.write("Número elevado a 9: " + Math.pow(numero, 9) + "<br>");
+        document.write("Número elevado a 10: " + Math.pow(numero, 10) + "<br>");
+        document.write("Fatorial do número: " + (function fatorial(n) { return n <= 1 ? 1 : n * fatorial(n - 1); })(numero) + "<br>");
+        document.write("Número par ou ímpar: " + (numero % 2 === 0 ? "Par" : "Ímpar") + "<br>");
+        document.write("Número positivo ou negativo: " + (numero >= 0 ? "Positivo" : "Negativo") + "<br>");
+        document.write("Número é múltiplo de 3: " + (numero % 3 === 0 ? "Sim" : "Não") + "<br>");
+        document.write("Número é múltiplo de 5: " + (numero % 5 === 0 ? "Sim" : "Não") + "<br>");
+        document.write("Número é múltiplo de 10: " + (numero % 10 === 0 ? "Sim" : "Não") + "<br>");
+        document.write("Número é primo: " + (function isPrime(n) { if (n <= 1) return false; for (let i = 2; i <= Math.sqrt(n); i++) { if (n % i === 0) return false; } return true; })(numero) ? "Sim" : "Não") + "<br>");
+        document.write("Número em binário: " + numero.toString(2) + "<br>");
+        document.write("Número em octal: " + numero.toString(8) + "<br>");
+        document.write("Número em hexadecimal: " + numero.toString(16).toUpperCase() + "<br>");
+        document.write("Número arredondado para cima: " + Math.ceil(numero) + "<br>");
+        document.write("Número arredondado para baixo: " + Math.floor(numero) + "<br>");
+        document.write("Número arredondado: " + Math.round(numero) + "<br>");
+        document.write("Valor absoluto do número: " + Math.abs(numero) + "<br>");
+        document.write("Número em notação científica: " + numero.toExponential(2) + "<br>");
+        document.write("Número em notação fixa: " + numero.toFixed(2) + "<br>");
+        document.write("Número em notação de precisão: " + numero.toPrecision(2) + "<br>");
+        document.write("Número em formato local: " + numero.toLocaleString() + "<br>");
 
     </script>
 </body>

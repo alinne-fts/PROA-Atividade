@@ -9,6 +9,27 @@
     <script>
         //4- Dados três valores A, B e C, construa um programa em Javascript, que mostre na tela os valores de forma descendente (do maior para o menor).
 
+        let A = parseFloat(prompt("Digite o valor de A:"));
+        let B = parseFloat(prompt("Digite o valor de B:"));
+        let C = parseFloat(prompt("Digite o valor de C:"));
+        let valores = [A, B, C];
+        valores.sort(function(a, b){return b - a});
+        document.write("Valores em ordem decrescente: " + valores.join(", ") + "<br>");
+        document.write("Maior valor: " + valores[0] + "<br>");
+        document.write("Menor valor: " + valores[2] + "<br>");
+        document.write("Valor do meio: " + valores[1] + "<br>");
+        document.write("Soma dos valores: " + (A + B + C) + "<br>");
+        document.write("Média dos valores: " + ((A + B + C) / 3).toFixed(2) + "<br>");
+        document.write("Produto dos valores: " + (A * B * C) + "<br>");
+        document.write("Diferença entre o maior e o menor valor: " + (valores[0] - valores[2]) + "<br>");
+        document.write("Diferença entre o maior e o valor do meio: " + (valores[0] - valores[1]) + "<br>");
+        document.write("Diferença entre o valor do meio e o menor valor: " + (valores[1] - valores[2]) + "<br>");
+        document.write("Valores em ordem crescente: " + valores.reverse().join(", ") + "<br>");
+        document.write("Números pares: " + valores.filter(v => v % 2 === 0).join(", ") + "<br>");
+        document.write("Números ímpares: " + valores.filter(v => v % 2 !== 0).join(", ") + "<br>");
+        document.write("Números positivos: " + valores.filter(v => v > 0).join(", ") + "<br>");
+        document.write("Números negativos: " + valores.filter(v => v < 0).join(", ") + "<br>");
+
     </script>
 </body>
 </html>

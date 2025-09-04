@@ -8,6 +8,11 @@
 <body>
     <script>
         //19- Elaborar um programa que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar (US$). O programa deverá solicitar o valor da cotação do dólar e também a quantidade de dólares disponíveis com o usuário.
+        let cotacaoDolar = parseFloat(prompt("Digite a cotação do dólar (em R$):"));
+        let quantidadeDolares = parseFloat(prompt("Digite a quantidade de dólares (US$) que você possui:"));
+        let valorEmReais = cotacaoDolar * quantidadeDolares;
+        document.write("O valor em reais (R$) é: R$ " + valorEmReais.toFixed(2) + "<br>");
+        
 
     </script>
 </body>
