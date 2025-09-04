@@ -6,9 +6,36 @@
     <title>Document</title>
 </head>
 <body>
+    <h4>atividade1</h4>
+    <p>teste com paragrafo</p>
+    <img src="img/atividade1.png" alt="atividade da imagem">
     <script>
         //Criar um programa em Java, que informe a quantidade total de calorias de uma refeição a partir do usuário que deverá informar o prato, a sobremesa e a bebida (veja a tabela a seguir).
         //Sugestão: enumere cada opção de prato, sobremesa e bebida. Ou seja: Prato: 1 - vegetariano, 2 – Peixe, 3 – Frango, 4 – Carne; Sobremesa: 1 – Abacaxi, 2 – Sorvete diet, 3 – Mouse diet, 4 – Mouse chocolate; Bebida: 1 – Chá, 2 - Suco de laranja, 3 – Suco de melão, 4 – Refrigerante diet.
+
+        let prato = parseInt(prompt("Escolha um prato:\n1 - Vegetariano\n2 - Peixe\n3 - Frango\n4 - Carne"));
+        let sobremesa = parseInt(prompt("Escolha uma sobremesa:\n1 - Abacaxi\n2 - Sorvete diet\n3 - Mousse diet\n4 - Mousse chocolate"));
+        let bebida = parseInt(prompt("Escolha uma bebida:\n1 - Chá\n2 - Suco de laranja\n3 - Suco de melão\n4 - Refrigerante diet"));
+        let caloriasPrato = 0;
+        let caloriasSobremesa = 0;
+        let caloriasBebida = 0;
+        let totalCalorias = 0;
+        switch (prato) {
+            case 1:
+                caloriasPrato = 180;
+                break;
+            case 2:
+                caloriasPrato = 230;
+                break;
+            case 3:
+                caloriasPrato = 250;
+                break;
+            case 4:
+                caloriasPrato = 350;
+                break;
+            default:
+                document.write("Opção de prato inválida.<br>");
+        }
 
     </script>
 </body>
