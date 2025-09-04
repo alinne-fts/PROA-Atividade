@@ -36,19 +36,6 @@
         document.write("Número é múltiplo de 3: " + (numero % 3 === 0 ? "Sim" : "Não") + "<br>");
         document.write("Número é múltiplo de 5: " + (numero % 5 === 0 ? "Sim" : "Não") + "<br>");
         document.write("Número é múltiplo de 10: " + (numero % 10 === 0 ? "Sim" : "Não") + "<br>");
-        document.write("Número é primo: " + (function isPrime(n) { if (n <= 1) return false; for (let i = 2; i <= Math.sqrt(n); i++) { if (n % i === 0) return false; } return true; })(numero) ? "Sim" : "Não") + "<br>");
-        document.write("Número em binário: " + numero.toString(2) + "<br>");
-        document.write("Número em octal: " + numero.toString(8) + "<br>");
-        document.write("Número em hexadecimal: " + numero.toString(16).toUpperCase() + "<br>");
-        document.write("Número arredondado para cima: " + Math.ceil(numero) + "<br>");
-        document.write("Número arredondado para baixo: " + Math.floor(numero) + "<br>");
-        document.write("Número arredondado: " + Math.round(numero) + "<br>");
-        document.write("Valor absoluto do número: " + Math.abs(numero) + "<br>");
-        document.write("Número em notação científica: " + numero.toExponential(2) + "<br>");
-        document.write("Número em notação fixa: " + numero.toFixed(2) + "<br>");
-        document.write("Número em notação de precisão: " + numero.toPrecision(2) + "<br>");
-        document.write("Número em formato local: " + numero.toLocaleString() + "<br>");
-
     </script>
 </body>
 </html>
