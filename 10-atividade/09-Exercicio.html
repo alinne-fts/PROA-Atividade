@@ -15,9 +15,10 @@
         for (let mes = 1; mes <= 12; mes++) {
             montante = (montante + depositoMensal) * (1 + taxaJurosMensal);
         }
-        document.write("O montante após 12 meses é: " + montante.toFixed(2) + "<br>");
-        document.write("O valor total depositado é: " + (depositoMensal * 12).toFixed(2) + "<br>");
-        document.write("O valor total de juros ganhos é: " + (montante - depositoMensal * 12).toFixed(2) + "<br>");
+        document.write("total depositado: " + (depositoMensal * 12).toFixed(2) + "<br>");
+        document.write("juros ganhos: " + (montante - depositoMensal * 12).toFixed(2) + "<br>");
+        document.write("resultado após 12 meses: " + montante.toFixed(2) + "<br>");
+        
 
     </script>
 </body>

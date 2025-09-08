@@ -13,10 +13,14 @@
         let nota2 = parseFloat(prompt("Digite a segunda nota:"));
         let nota3 = parseFloat(prompt("Digite a terceira nota:"));
         let media = (nota1 + nota2 + nota3) / 3;
+        document.write("primeira notas: " + nota1 + "<br>" );
+        document.write("segunda nota: " + nota2 + "<br>");
+        document.write("terceira nota: " + nota3 + "<br>");
+        document.write("Média: " + media.toFixed(2) + "<br>");
         if (media >= 7) {
-            document.write("Aluno aprovado com média: " + media.toFixed(2) + "<br>");
+            document.write("Aluno aprovado");
         } else {
-            document.write("Aluno reprovado com média: " + media.toFixed(2) + "<br>");
+            document.write("Aluno reprovado");
         }
         
 
