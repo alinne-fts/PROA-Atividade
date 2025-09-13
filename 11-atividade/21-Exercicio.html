@@ -9,9 +9,18 @@
     <script>
         //21- A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem juros. Faça um programa que receba um valor de uma compra e mostre o valor das prestações.
         let valorCompra = parseFloat(prompt("Digite o valor da compra:"));
-        let valorPrestacao = valorCompra / 5;
-        document.write("O valor de cada prestação (5x sem juros) é: R$ " + valorPrestacao.toFixed(2) + "<br>");
-        
+        let valorPrestacao1 = valorCompra / 1;
+        let valorPrestacao2 = valorCompra / 2;
+        let valorPrestacao3 = valorCompra / 3;
+        let valorPrestacao4 = valorCompra / 4;
+        let valorPrestacao5 = valorCompra / 5;
+        document.write("O valor da compra é: R$ " +valorCompra + "<br>");
+        document.write("O valor de cada prestação <br>")
+        document.write("(1x sem juros) é: R$ " + valorPrestacao1.toFixed(2) + "<br>");
+        document.write("(2x sem juros) é: R$ " + valorPrestacao2.toFixed(2) + "<br>");
+        document.write("(3x sem juros) é: R$ " + valorPrestacao3.toFixed(2) + "<br>");
+        document.write("(4x sem juros) é: R$ " + valorPrestacao4.toFixed(2) + "<br>");
+        document.write("(5x sem juros) é: R$ " + valorPrestacao5.toFixed(2) + "<br>");
 
     </script>
 </body>

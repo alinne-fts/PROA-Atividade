@@ -20,13 +20,13 @@
         } else {
             valorCredito = saldoMedio * 0.4;
         }
-        document.write("Saldo médio: R$ " + saldoMedio.toFixed(2) + "<br>");
+        document.write("Saldo médio anual: R$ " + saldoMedio.toFixed(2) + "<br>");
         document.write("Valor do crédito: R$ " + valorCredito.toFixed(2) + "<br>");
         document.write("Taxa de juros: 2% ao mês<br>");
         document.write("Valor dos juros: R$ " + (valorCredito * 0.02).toFixed(2) + "<br>");
         document.write("Valor total a ser pago: R$ " + (valorCredito + (valorCredito * 0.02)).toFixed(2) + "<br>");
         document.write("Prazo para pagamento: 12 meses<br>");
-        document.write("Valor das parcelas: R$ " + ((valorCredito + (valorCredito * 0.02)) / 12).toFixed(2) + "<br>");
+        document.write("Valor das parcelas: R$ " + ((valorCredito + (valorCredito * 0.02)) / 12).toFixed(2));
     </script>
 </body>
 </html>

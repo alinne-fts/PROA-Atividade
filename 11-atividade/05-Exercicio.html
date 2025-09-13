@@ -12,50 +12,16 @@
         //· eleitor obrigatório (entre a faixa de 18 e menor de 65 anos);
         //· eleitor facultativo (de 16 até 18 anos e maior de 65 anos, inclusive).
         let idade = parseInt(prompt("Digite a idade da pessoa:"));
-        if (idade < 16) {
-            document.write("Não eleitor (abaixo de 16 anos).<br>");
-        } else if (idade >= 18 && idade < 65) {
-            document.write("Eleitor obrigatório (entre a faixa de 18 e menor de 65 anos).<br>");
-        } else {
-            document.write("Eleitor facultativo (de 16 até 18 anos e maior de 65 anos, inclusive).<br>");
-        }
         document.write("Idade: " + idade + " anos.<br>");
-        document.write("Ano de nascimento: " + (2024 - idade) + ".<br>");
         document.write("Situação eleitoral: ");
         if (idade < 16) {
-            document.write("Não eleitor.<br>");
+            document.write("Não eleitor.");
         } else if (idade >= 18 && idade < 65) {
-            document.write("Eleitor obrigatório.<br>");
+            document.write("Eleitor obrigatório.");
         } else {
-            document.write("Eleitor facultativo.<br>");
+            document.write("Eleitor facultativo.");
         }
-        document.write("Obrigatoriedade do voto: ");
-        if (idade < 16) {
-            document.write("Não é obrigado a votar.<br>");
-        } else if (idade >= 18 && idade < 65) {
-            document.write("É obrigado a votar.<br>");
-        } else {
-            document.write("Não é obrigado a votar.<br>");
-        }
-        document.write("Próxima eleição: 2024.<br>");
-        document.write("Faltam " + (2024 - (2024 - idade)) + " anos para a próxima eleição.<br>");
-        document.write("Número do título de eleitor: " + Math.floor(Math.random() * 100000000) + "<br>");
-        document.write("Zona eleitoral: " + Math.floor(Math.random() * 100) + "<br>");
-        document.write("Seção eleitoral: " + Math.floor(Math.random() * 1000) + "<br>");
-        document.write("Local de votação: " + "Escola Municipal de Ensino Fundamental<br>");
-        document.write("Endereço do local de votação: " + "Rua das Flores, 123 - Centro<br>");
-        document.write("Cidade do local de votação: " + "São Paulo<br>");
-        document.write("Estado do local de votação: " + "SP<br>");
-        document.write("CEP do local de votação: " + "01000-000<br>");
-        document.write("Telefone do local de votação: " + "(11) 1234-5678<br>");
-        document.write("E-mail do local de votação: " + "contato@escol  a.com.br<br>");
-        document.write("Horário de votação: " + "Das 8h às 17h<br>");
-        document.write("Documentos necessários para votar: " + "Título de eleitor e documento oficial com foto.<br>"); 
-        document.write("Data da última eleição: " + "2022<br>");
-        document.write("Data da próxima eleição: " + "2024<br>");
-        document.write("Observações: " + "Lembre-se de votar consciente!<br>");
         
-
     </script>
 </body>
 </html>

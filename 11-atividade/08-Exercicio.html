@@ -8,14 +8,12 @@
 <body>
     <script>
         //8- Escrever um programa que leia:
+        //- a porcentagem do IPI a ser acrescido no valor das peças
+        //- o código da peça 1, valor unitário da peça 1, quantidade de peças 1
+        //- o código da peça 2, valor unitário da peça 2, quantidade de peças 2
+        //O programa deve calcular o valor total a ser pago e apresentar o resultado.
+        //Cálculo : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
 
-//- a porcentagem do IPI a ser acrescido no valor das peças
-//- o código da peça 1, valor unitário da peça 1, quantidade de peças 1
-//- o código da peça 2, valor unitário da peça 2, quantidade de peças 2
-
-//O programa deve calcular o valor total a ser pago e apresentar o resultado.
-
-//Cálculo : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
         let ipi = parseFloat(prompt("Digite a porcentagem do IPI a ser acrescido no valor das peças:"));
         let codigo1 = prompt("Digite o código da peça 1:");
         let valor1 = parseFloat(prompt("Digite o valor unitário da peça 1:"));
@@ -24,7 +22,17 @@
         let valor2 = parseFloat(prompt("Digite o valor unitário da peça 2:"));
         let quant2 = parseInt(prompt("Digite a quantidade de peças 2:"));
         let total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
-        document.write("O valor total a ser pago é: R$ " + total.toFixed(2) + "<br>");
+        document.write("Peça 1------------------<br>");
+        document.write("Código: " + codigo1 + "<br>");
+        document.write("Valor unitário: R$ " + valor1.toFixed(2) + "<br>");
+        document.write("Quantidade: " + quant1 + "<br>");
+        document.write("Peça 2------------------<br>");
+        document.write("Código: " + codigo2 + "<br>");
+        document.write("Valor unitário: R$ " + valor2.toFixed(2) + "<br>");
+        document.write("Quantidade: " + quant2 + "<br>");
+        document.write("------------------------<br>");
+        document.write("Porcentagem do IPI: %" + ipi.toFixed(1) + "<br>");
+        document.write("O valor total a ser pago: R$ " + total.toFixed(2));
         
 
     </script>
