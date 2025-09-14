@@ -7,8 +7,13 @@
 </head>
 <body>
     <script>
-        //Leia a idade de 20 pessoas e exiba a soma das idades.  
-
+        //Leia a idade de 20 pessoas e exiba a soma das idades. 
+        let soma = 0;
+        for (let i = 1; i <= 20; i ++) {
+        let idade = parseInt(prompt("Digite a idade da: " + i + "º pessoa:"));
+        soma += idade;
+        }
+        document.write("A soma das idade das 20 pessoas é: " + soma);
 
     </script>
 </body>

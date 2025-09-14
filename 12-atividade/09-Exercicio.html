@@ -8,7 +8,17 @@
 <body>
     <script>
         //Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.  
-
+        let nomeMaisNova = "";
+        let idadeMaisNova = 999;
+        for (let i = 1; i <= 10; i++) {
+        let nome = prompt("Digite o nome da " + i + " pessoa");
+        let idade = parseInt(prompt("Digite a idade da " + i + "º pessoa:"));
+            if (idade < idadeMaisNova) {
+                idadeMaisNova = idade;
+                nomeMaisNova = nome;
+            }
+        }
+        document.write("O nome da pessoa mais nova é: " + nomeMaisNova);
 
     </script>
 </body>
