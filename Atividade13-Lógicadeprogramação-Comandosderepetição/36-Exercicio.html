@@ -8,6 +8,14 @@
 <body>
     <script>
         //Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número.
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+        document.write("Divisores de " + numero + ":<br>");
+        for (let i = 1; i <= numero; i++) {
+            if (numero % i === 0) {
+                document.write(i + "<br>");
+            }
+        }
+        
     </script>
 </body>
 </html>

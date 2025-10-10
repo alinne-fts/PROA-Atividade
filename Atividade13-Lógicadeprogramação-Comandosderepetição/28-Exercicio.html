@@ -8,6 +8,14 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".
+        let numero = prompt("Digite um número inteiro:");
+        let i = 0;
+        document.write("Dígitos do número " + numero + " separados:<br>");
+        do {
+            document.write("[" + numero.charAt(i) + "]");
+            i++;
+        } while (i < numero.length);
+
     </script>
 </body>
 </html>

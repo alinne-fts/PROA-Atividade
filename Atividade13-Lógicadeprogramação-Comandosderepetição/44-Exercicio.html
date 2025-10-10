@@ -8,6 +8,13 @@
 <body>
     <script>
         //Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário.
+        let numero = parseInt(prompt("Digite um número inteiro para calcular o fatorial:"));
+        let fatorial = 1;
+        for (let i = 1; i <= numero; i++) {
+            fatorial *= i;
+            document.write(i + (i < numero ? " x " : " = " + fatorial + "<br>"));
+        }
+        document.write("O fatorial de " + numero + " é: " + fatorial);
     </script>
 </body>
 </html>

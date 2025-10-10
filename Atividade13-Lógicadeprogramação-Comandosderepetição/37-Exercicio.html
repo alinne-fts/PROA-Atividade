@@ -8,6 +8,24 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba se ele é um número primo.
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let ehPrimo = true;
+        if (numero <= 1) {
+            ehPrimo = false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                    ehPrimo = false;
+                    break;
+                }
+            }
+        }
+        if (ehPrimo) {
+            document.write(numero + " é um número primo.");
+        } else {
+            document.write(numero + " não é um número primo.");
+        }
+        
     </script>
 </body>
 </html>

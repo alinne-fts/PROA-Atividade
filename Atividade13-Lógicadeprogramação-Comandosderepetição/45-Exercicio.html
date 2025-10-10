@@ -8,6 +8,24 @@
 <body>
     <script>
         //Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final, exiba a média das idades.
+        let totalIdade = 0;
+        let contador = 0;
+        while (true) {
+            let nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):");
+            if (nome.toLowerCase() === "fim") {
+                break;
+            }
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            totalIdade += idade;
+            contador++;
+        }
+        if (contador > 0) {
+            let mediaIdade = parseInt(totalIdade / contador);
+            document.write("A média das idades é: " + mediaIdade);
+        } else {
+            document.write("Nenhuma idade foi informada.");
+        }
+        
     </script>
 </body>
 </html>

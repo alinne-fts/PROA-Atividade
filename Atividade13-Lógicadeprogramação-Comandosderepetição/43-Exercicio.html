@@ -8,6 +8,12 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.
+        let numero = prompt("Digite um número inteiro:");
+        document.write("Dígitos do número " + numero + ":<br>");
+        for (let i = 0; i < numero.length; i++) {
+            document.write("[" + numero[i] + "]");
+        }
+
     </script>
 </body>
 </html>

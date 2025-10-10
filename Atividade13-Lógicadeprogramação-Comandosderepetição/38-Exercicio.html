@@ -8,6 +8,16 @@
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido.
+        let numero = parseInt(prompt("Digite um número inteiro para ver a sequência de Fibonacci até esse número:"));
+        let a = 0, b = 1;
+        document.write("Sequência de Fibonacci até " + numero + ":<br>");
+        while (a <= numero) {
+            document.write(a + ", ");
+            let proximo = a + b;
+            a = b;
+            b = proximo;
+        }
+
     </script>
 </body>
 </html>

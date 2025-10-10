@@ -8,6 +8,13 @@
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor.
+        let numero = parseInt(prompt("Digite um número inteiro para ver a tabuada:"));
+        document.write("Tabuada do " + numero + ":<br>");
+        for (let i = 1; i <= 10; i++) {
+            let resultado = numero * i;
+            document.write(numero + " x " + i + " = " + resultado + "<br>");
+        }
+        
     </script>
 </body>
 </html>
