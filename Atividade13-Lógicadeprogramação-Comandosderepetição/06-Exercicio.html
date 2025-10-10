@@ -8,6 +8,15 @@
 <body>
     <script>
         //Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "while".
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+        let i = 1;
+        document.write("Divisores de " + numero + ":<br>");
+        while (i <= numero) {
+            if (numero % i === 0) {
+                document.write(i + ", ");
+            }
+            i++;
+        }
     </script>
 </body>
 </html>

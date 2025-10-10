@@ -8,6 +8,16 @@
 <body>
     <script>
         //Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "while" e exiba a média das idades.
+        let totalIdade = 0;
+        let contador = 0;
+        while (contador < 5) {
+            let nome = prompt("Digite o nome da pessoa " + (contador + 1) + ":");
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            totalIdade += idade;
+            contador++;
+        }
+        let mediaIdade = parseInt(totalIdade / 5);
+        document.write("A média das idades é: " + mediaIdade + "<br>");
     </script>
 </body>
 </html>

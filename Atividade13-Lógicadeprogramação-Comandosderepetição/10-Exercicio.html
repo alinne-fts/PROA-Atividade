@@ -8,6 +8,17 @@
 <body>
     <script>
         //Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "while".
+        let a = 0, b = 1;
+        let count = 0;
+        document.write("Primeiros 20 números da sequência de Fibonacci:");
+        while (count < 20) {
+            document.write(a + ", ");
+            let proximo = a + b;
+            a = b;
+            b = proximo;
+            count++;
+        }
+
     </script>
 </body>
 </html>
