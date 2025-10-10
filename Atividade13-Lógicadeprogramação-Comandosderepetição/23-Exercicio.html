@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-Exercicio</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".
+        let numero = parseInt(prompt("Digite um número inteiro para ver a sequência de Fibonacci até esse número:"));
+        let a = 0, b = 1;
+        document.write("Sequência de Fibonacci até " + numero + ":<br>");
+        do {
+            document.write(a + ", ");
+            let proximo = a + b;
+            a = b;
+            b = proximo;
+        } while (a <= numero);
+        
+    </script>
+</body>
+</html>

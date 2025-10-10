@@ -8,27 +8,25 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".
-        let numero = parseInt(prompt("Digite um número inteiro:"));
-
-        let i = 2;
-        let primo = true; 
-
-        while (i < numero) {
-            if (numero % i === 0) {
-                primo = false; 
-                break; 
-            }
-            i++;
-        }
-
+        let numero = parseInt(prompt("Digite um número inteiro para verificar se é primo:"));
         if (numero <= 1) {
-            document.write("O número " + numero + " não é primo.");
-        } else if (primo) {
-            document.write("O número " + numero + " é primo!");
+            document.write(numero + " não é um número primo.");
         } else {
-            document.write("O número " + numero + " não é primo.");
+            let i = 2;
+            let isPrimo = true;
+            while (i <= Math.sqrt(numero)) {
+                if (numero % i === 0) {
+                    isPrimo = false;
+                    break;
+                }
+                i++;
+            }
+            if (isPrimo) {
+                document.write(numero + " é um número primo.");
+            } else {
+                document.write(numero + " não é um número primo.");
+            }
         }
-
     </script>
 </body>
 </html>
