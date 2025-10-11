@@ -6,37 +6,57 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/guitarra_fundo_body.jpg);
+    background-repeat: no-repeat; 
+    background-position: center top; 
+    background-attachment: scroll; 
+    background-size: 100% 70%;
+}
+
 main{
     position: relative;
     width: 90%;
     height: 1700px;
+    margin-top: 200px;
     background-color: #f57;
     margin: auto;
     font-family: verdana;
     font-size: 15px;
 }
 
-#cabecalho_pagina img{
+.imagem_do_fundo{
+    position: absolute;
+    width: 110%;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+#home img{
     position: relative;
     width: 100%;
     height: 175px;
 }
 
-nav {
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 20px;
+.menu{
+    position: absolute;
+    top: 125px;
+    margin-right: 50px;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    
+}
+
+.menu a{
+    color: rgb(205, 11, 49);
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
-  }
-  
+    margin: 25px;
+}
 
 #faixa_vermelha{
     position: relative;
@@ -58,33 +78,46 @@ nav {
     justify-content: space-between;
 }
 
-.nossa_loja h2{
-    font-weight: bold;
-}
-
-.nossa_loja{
+.loja{
     position: relative;
     width:47%;
     height:300px;
     background-color:#c66;
-    padding: 25px;
-    color: #fff
-}
-.loja img{
-    position: relative;
-    width:100%;
-    height:300px;
+    color: #fff;
+    padding: 30px;
 }
 
-#faixa_azul{
+.loja h2{
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.foto_loja img{
+    position: relative;
+    width: 600px;;
+    height:300px;    
+}
+
+#faixa_branco{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 370px;
     margin-top: 10px;
     background: #fff;
 }
 
-#alinhamento_azul{
+.vitrine img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.preco{
+    color:#ff0101;
+    font-weight: bold;
+}
+
+#alinhamento_branco{
     position: relative;
     width:93%;
     height:100%;           
@@ -95,143 +128,188 @@ nav {
     justify-content: space-between; 
     text-align: center;
 }
+ 
+.vitrine p {
+    background-color: #fff;
+}
 
-.violao img{
+#faixa_marrom{
     position: relative;
-    width:90%;
-    height:200px;
-    border-radius: 10px;
-    background-color:#fff;
-}
-
-.violao p{
-    font-size: 12px;
-}
-
-.preco{
-    font-size: 20px;
-    font-weight: bold;
-    color: #f00;
+    width: 100%;
+    height: 425px;
+    margin-top: 10px;
+    background-color: #853f3a;
 }
 
 #alinhamento_amarelo{
     position: relative;
     width:90%;
-    height:95%;            
+    height:99%;
     margin:auto;
     display:flex;
     flex-direction: row;
-    align-items: center;       
+    align-items: center;
     justify-content: space-between;
 }
 
-#informacoes p{
-    font-size: 14px;
-}
-
-#informacoes input{
-    width: 500px;
-    height: 35px;
-    margin-bottom: 15px;
-    padding-left: 10px; 
-    border-radius: 5px;
-    border: 1px solid #000;
-}
-
-#informacoes .pedido{
-    width: 300px;
-    height: 125px;
-    border: 1px solid #000;
-    background-color: #fff;
-}
-
-#informacoes button{
-    width: 500px;
-    height: 35px;
-    background-color: #c9c9c9;
-    color: #000;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #000;
-}
-
-.redes_sociais{
+.mapa iframe{
     position: relative;
-    width: 100%;
-    height: 70px;
-    margin-top: 20px;
-    display: flex  ;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#faixa_de_informacoes{
-    position: relative;
-    width: 100%;
-    height: 350px;
-    margin-top: 10px;
-    background: #fff;
-    padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-
-.azul{
-    position: relative;
-    width: 45%;
-    height: 300px;
-    background-color: #140263;
-}
-
-.azul iframe{
-    position: relative;
-    width:100%;
-    height:300px;
+    width:650px;
+    height:400px;
+    color: #fff;
+    padding: 40px;
+    border-radius: 50px;
 }
 
 .endereco{
     position: relative;
-    width: 45%;
-    height: 300px;
-    background-color: #a9605b;
-    padding-left: 20px;
-    padding-top: 15px;
-    color: #fff
+    width:60%;
+    height:400px;
+    background-color:#c66;
+    color: #fff;
+    padding: 30px;
 }
- 
-.redes_sociais img{
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
+
+.endereco h2{
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-top: 10px;
+}
+/*-------------------------------*/
+
+#contato{
+    position: relative;
+    width: 100%;
+    height: 425px;
+    margin-top: 10px;
+    background-color: #eee;
+}
+
+#alinhamento_de_contato{
+    position: relative;
+    width:90%;
+    height:99%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--------------------------------*/
+
+#faixa_branca{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin-top: 10px;
+    background: #fff;
+
+}
+
+#alinhamento_vermelho{
+    position: relative;
+    width:90%;
+    height:99%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato{
+    position: relative;
+    width:47%;
+    height:400px;
+    margin-top: 50px;
+
+}
+
+.digite{
+    margin-bottom: 15px;
+}
+
+.digite label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+
+.digite input,
+.digite textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.pedido textarea {
+    width: 60%;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+button{
+    width: 550px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    margin-top: 10px;
+}
+
+.redes_sociais h2{
+    font-weight: bold;
+    padding-bottom: 3px;
+    color: darkblue;
+}
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone img{
+    position: relative;
+    width: 100px;;
+    height:100px;
+    margin: 2px;
 }
 
 footer{
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 175px;
     margin-top: 10px;
     background-color: #000;
     clear:left;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 footer img{
     position: relative;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     margin: 25px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer p{
     position: relative;
     text-align: center;
     color:#fff;
-    font-size: 12px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 footer h6{
@@ -240,4 +318,11 @@ footer h6{
     color:#fff;
     font-size: 14px;
     margin-top: 10px;
+    font-weight: bold;
+}
+
+.rede_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
