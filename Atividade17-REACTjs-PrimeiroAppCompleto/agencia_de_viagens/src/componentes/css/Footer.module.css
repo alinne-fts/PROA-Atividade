@@ -1,0 +1,27 @@
+.fundo_footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #111;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.icones{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto_footer{
+    text-align: center;
+    margin: 5px;
+}
+
+.icone{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
