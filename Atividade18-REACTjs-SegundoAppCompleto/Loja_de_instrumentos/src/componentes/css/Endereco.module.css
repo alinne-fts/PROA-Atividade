@@ -1,0 +1,41 @@
+.faixa_marrom{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    background-color: #853f3a;
+}
+
+.alinhamento_amarelo{
+    position: relative;
+    width:90%;
+    height:99%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mapa iframe{
+    position: relative;
+    width:600px;
+    height:350px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.endereco{
+    position: relative;
+    width:70%;
+    height:300px;
+    background-color:#c66;
+    color: #fff;
+    padding: 30px;
+}
+
+.endereco h2{
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-top: 10px;
+}

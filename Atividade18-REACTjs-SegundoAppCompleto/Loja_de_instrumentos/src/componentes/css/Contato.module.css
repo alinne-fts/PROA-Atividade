@@ -1,0 +1,105 @@
+.contato{
+    position: relative;
+    width: 100%;
+    height: 425px;
+    margin-top: 10px;
+}
+
+.alinhamento_de_contato{
+    position: relative;
+    width:90%;
+    height:99%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faixa_branca{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin-top: 10px;
+    background: #fff;
+
+}
+
+.alinhamento_vermelho{
+    position: relative;
+    width:90%;
+    height:99%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato{
+    position: relative;
+    width:47%;
+    height:400px;
+    margin-top: 50px;
+
+}
+
+.digite{
+    margin-bottom: 15px;
+}
+
+.digite label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+
+.digite input,
+.digite textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.pedido textarea {
+    width: 60%;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+button{
+    width: 550px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    margin-top: 10px;
+}
+
+.redes_sociais h2{
+    font-weight: bold;
+    padding-bottom: 3px;
+    color: darkblue;
+}
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone img{
+    position: relative;
+    width: 90px;
+    height:90px;
+    margin: 2px;
+}

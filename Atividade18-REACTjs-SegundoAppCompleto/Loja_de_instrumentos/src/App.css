@@ -1,0 +1,10 @@
+main{
+  position: relative;
+  width: 90%;
+  height: 2300px;
+  margin-top: 200px;
+  background-color: #f57;
+  margin: auto;
+  font-family: verdana;
+  font-size: 15px;
+}
