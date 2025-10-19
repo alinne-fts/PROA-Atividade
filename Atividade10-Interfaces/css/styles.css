@@ -1,0 +1,505 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0f0f0f;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER YOUTUBE */
+#header_youtube{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 1000;
+    border-bottom: 1px solid #3f3f3f;
+}
+
+#menu_esquerdo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#menu_hamburger{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.linha{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+#logo_youtube{
+    position: relative;
+    width: 90px;
+    height: 20px;
+}
+
+#logo_youtube img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#barra_pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 640px;
+    height: 40px;
+    gap: 8px;
+}
+
+#campo_pesquisa{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    border: 1px solid #3f3f3f;
+    border-right: none;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px 0 0 40px;
+}
+
+#campo_pesquisa:focus{
+    outline: none;
+    border-color: #1f1f1f;
+}
+
+#botao_pesquisar{
+    position: relative;
+    width: 64px;
+    height: 100%;
+    background-color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao_pesquisar img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+#botao_microfone{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#botao_microfone:hover{
+    background-color: #4f4f4f;
+}
+
+#botao_microfone img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+#menu_direito{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icone_menu{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.icone_menu:hover{
+    background-color: #3f3f3f;
+}
+
+.icone_menu img{
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+/* CONTAINER PRINCIPAL */
+#container_principal{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 56px);
+    margin-top: 56px;
+    display: flex;
+}
+
+/* SIDEBAR */
+#sidebar{
+    position: relative;
+    width: 240px;
+    height: 100%;
+    background-color: #0f0f0f;
+    padding: 12px 0;
+    overflow-y: auto;
+}
+
+.item_sidebar{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item_sidebar:hover{
+    background-color: #3f3f3f;
+}
+
+.item_sidebar.ativo{
+    background-color: #3f3f3f;
+    border-left: 3px solid #ff0000;
+}
+
+.secao_sidebar{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 24px;
+}
+
+.secao_sidebar h4{
+    position: relative;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.item_sidebar img{
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.item_sidebar span{
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+#conteudo_principal{
+    position: relative;
+    width: calc(100% - 240px);
+    height: 100%;
+    background-color: #0f0f0f;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+/* FILTROS */
+#filtros{
+    position: relative;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.filtro{
+    position: relative;
+    height: 32px;
+    padding: 0 12px;
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.filtro:hover{
+    background-color: #4f4f4f;
+}
+
+.filtro.ativo{
+    background-color: #fff;
+    color: #0f0f0f;
+    font-weight: 500;
+}
+
+/* GRID DE VÍDEOS */
+#grid_videos{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.video_card{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.thumbnail{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #3f3f3f;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.thumbnail img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duracao{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.info_video{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.canal_avatar{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.canal_avatar img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detalhes_video{
+    position: relative;
+    width: calc(100% - 48px);
+}
+
+.detalhes_video h3{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.canal_nome{
+    position: relative;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 2px;
+}
+
+.visualizacoes{
+    position: relative;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1024px) {
+    #sidebar{
+        width: 72px;
+    }
+    
+    .item_sidebar span{
+        display: none;
+    }
+    
+    .item_sidebar{
+        justify-content: center;
+        padding: 0;
+    }
+    
+    #conteudo_principal{
+        width: calc(100% - 72px);
+    }
+    
+    #grid_videos{
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header_youtube{
+        padding: 0 8px;
+    }
+    
+    #barra_pesquisa{
+        width: 200px;
+    }
+    
+    #menu_direito{
+        gap: 4px;
+    }
+    
+    .icone_menu{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .icone_menu img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    #sidebar{
+        display: none;
+    }
+    
+    #conteudo_principal{
+        width: 100%;
+        padding: 16px;
+    }
+    
+    #grid_videos{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 12px;
+    }
+    
+    .thumbnail{
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header_youtube{
+        height: 48px;
+    }
+    
+    #container_principal{
+        height: calc(100vh - 48px);
+        margin-top: 48px;
+    }
+    
+    #barra_pesquisa{
+        width: 150px;
+    }
+    
+    #campo_pesquisa{
+        font-size: 14px;
+        padding: 0 12px;
+    }
+    
+    #conteudo_principal{
+        padding: 12px;
+    }
+    
+    #filtros{
+        height: 48px;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    
+    .filtro{
+        height: 28px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    
+    #grid_videos{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .thumbnail{
+        height: 200px;
+    }
+    
+    .detalhes_video h3{
+        font-size: 14px;
+    }
+    
+    .canal_nome,
+    .visualizacoes{
+        font-size: 12px;
+    }
+}

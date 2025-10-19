@@ -3,7 +3,6 @@ import What from '../assets/img/whats.png'
 import Insta from '../assets/img/insta.png'
 import Face from '../assets/img/face.png'
 
-
 function Contato(){
     return(
         <section className={Styles.faixa_branca}>

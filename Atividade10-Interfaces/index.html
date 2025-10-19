@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="header_youtube">
+        <div id="menu_esquerdo">
+            <div id="menu_hamburger">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+            <div id="logo_youtube">
+                <img src="img/youtube-logo.png" alt="YouTube Logo">
+            </div>
+        </div>
+        
+        <div id="barra_pesquisa">
+            <input type="text" placeholder="Pesquisar" id="campo_pesquisa">
+            <button id="botao_pesquisar">
+                <img src="img/search-icon.png" alt="Pesquisar">
+            </button>
+            <button id="botao_microfone">
+                <img src="img/microphone-icon.png" alt="Microfone">
+            </button>
+        </div>
+        
+        <div id="menu_direito">
+            <button class="icone_menu">
+                <img src="img/video-icon.png" alt="Criar">
+            </button>
+            <button class="icone_menu">
+                <img src="img/apps-icon.png" alt="Apps">
+            </button>
+            <button class="icone_menu">
+                <img src="img/notifications-icon.png" alt="Notificações">
+            </button>
+            <button class="icone_menu">
+                <img src="img/profile-icon.png" alt="Perfil">
+            </button>
+        </div>
+    </header>
+
+    <div id="container_principal">
+        <nav id="sidebar">
+            <div class="item_sidebar ativo">
+                <img src="img/home-icon.png" alt="Início">
+                <span>Início</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/trending-icon.png" alt="Explorar">
+                <span>Explorar</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/subscriptions-icon.png" alt="Inscrições">
+                <span>Inscrições</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/library-icon.png" alt="Biblioteca">
+                <span>Biblioteca</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/history-icon.png" alt="Histórico">
+                <span>Histórico</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/playlist-icon.png" alt="Seus vídeos">
+                <span>Seus vídeos</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/liked-icon.png" alt="Assistir mais tarde">
+                <span>Assistir mais tarde</span>
+            </div>
+            <div class="item_sidebar">
+                <img src="img/liked-icon.png" alt="Vídeos que gostei">
+                <span>Vídeos que gostei</span>
+            </div>
+            
+            <div class="secao_sidebar">
+                <h4>INSCRIÇÕES</h4>
+                <div class="item_sidebar">
+                    <img src="img/avatar1.jpg" alt="Canal 1">
+                    <span>Canal 1</span>
+                </div>
+                <div class="item_sidebar">
+                    <img src="img/avatar2.jpg" alt="Canal 2">
+                    <span>Canal 2</span>
+                </div>
+                <div class="item_sidebar">
+                    <img src="img/avatar3.jpg" alt="Canal 3">
+                    <span>Canal 3</span>
+                </div>
+            </div>
+        </nav>
+
+        <main id="conteudo_principal">
+            <div id="filtros">
+                <button class="filtro ativo">Tudo</button>
+                <button class="filtro">Música</button>
+                <button class="filtro">Jogos</button>
+                <button class="filtro">Notícias</button>
+                <button class="filtro">Ao vivo</button>
+                <button class="filtro">Animação</button>
+                <button class="filtro">Ciência</button>
+                <button class="filtro">Tecnologia</button>
+                <button class="filtro">Educação</button>
+                <button class="filtro">Comédia</button>
+                <button class="filtro">Esportes</button>
+                <button class="filtro">Fitness</button>
+            </div>
+
+            <div id="grid_videos">
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail1.jpg" alt="Vídeo 1">
+                        <div class="duracao">10:30</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar1.jpg" alt="Canal 1">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Como criar uma página web incrível com HTML e CSS</h3>
+                            <p class="canal_nome">Canal Tech</p>
+                            <p class="visualizacoes">1,2 mi de visualizações • há 2 dias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail2.jpg" alt="Vídeo 2">
+                        <div class="duracao">15:45</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar2.jpg" alt="Canal 2">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Tutorial completo de JavaScript para iniciantes</h3>
+                            <p class="canal_nome">Dev Academy</p>
+                            <p class="visualizacoes">856 mil visualizações • há 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail3.jpg" alt="Vídeo 3">
+                        <div class="duracao">8:20</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar3.jpg" alt="Canal 3">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Dicas de design para interfaces modernas</h3>
+                            <p class="canal_nome">Design Pro</p>
+                            <p class="visualizacoes">432 mil visualizações • há 3 dias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail4.jpg" alt="Vídeo 4">
+                        <div class="duracao">12:15</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar4.jpg" alt="Canal 4">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>React para Iniciantes - Componentes</h3>
+                            <p class="canal_nome">React Brasil</p>
+                            <p class="visualizacoes">945 mil visualizações • há 5 dias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail5.jpg" alt="Vídeo 5">
+                        <div class="duracao">20:30</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar5.jpg" alt="Canal 5">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>CSS Grid Layout Completo</h3>
+                            <p class="canal_nome">CSS Master</p>
+                            <p class="visualizacoes">1,8 mi visualizações • há 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail6.jpg" alt="Vídeo 6">
+                        <div class="duracao">6:45</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar6.jpg" alt="Canal 6">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Flexbox em 5 Minutos</h3>
+                            <p class="canal_nome">CSS Tips</p>
+                            <p class="visualizacoes">3,2 mi visualizações • há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail7.jpg" alt="Vídeo 7">
+                        <div class="duracao">18:20</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar7.jpg" alt="Canal 7">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Node.js do Zero ao Avançado</h3>
+                            <p class="canal_nome">Backend Pro</p>
+                            <p class="visualizacoes">1,5 mi visualizações • há 4 dias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_card">
+                    <div class="thumbnail">
+                        <img src="img/thumbnail8.jpg" alt="Vídeo 8">
+                        <div class="duracao">14:10</div>
+                    </div>
+                    <div class="info_video">
+                        <div class="canal_avatar">
+                            <img src="img/avatar8.jpg" alt="Canal 8">
+                        </div>
+                        <div class="detalhes_video">
+                            <h3>Git e GitHub para Iniciantes</h3>
+                            <p class="canal_nome">Git Tutorial</p>
+                            <p class="visualizacoes">2,7 mi visualizações • há 1 semana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
