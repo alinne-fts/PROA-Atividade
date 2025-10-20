@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fontes/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fontes/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fontes/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../assets/fontes/static/Dosis-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../assets/fontes/static/Dosis-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../assets/fontes/static/Dosis-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', Arial, sans-serif;
+    background-color: #C5DBF2; /* azul claro do layout */
+    color: #2f3b45;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.navegador {
+    display: flex;
+    gap: 90px;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: #4a545a;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navegador-direito {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.button1 {
+    background: #C5DBF2;
+    border: 1px solid #000;
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button2 {
+    background: #12615E;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 100px 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    gap: 80px;
+}
+
+.texto h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 30px;
+
+}
+
+.texto p {
+    font-size: 25px;
+    color: #6f7e86;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.produto {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.janela {
+    background: #F7D5C5;
+    border-radius: 12px;
+    border: 2px solid #000;
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+.janelinha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    font-weight: 1000;
+    color: #ba7668;
+}
+
+.janela img{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.window-cart-icon {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background-image: url('../assets/images/carrinho.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopping{
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.8);
+    padding: 3px;
+    width: 210px;
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+}
+
+.shopping h3{
+    background-color: #e1e7ea;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+}
+
+.shopping button{
+    background: #12615E;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 37px;
+    margin-bottom: 5px;
+}
