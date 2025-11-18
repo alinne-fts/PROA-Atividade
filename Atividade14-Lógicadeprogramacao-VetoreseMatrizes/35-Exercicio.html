@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>35-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia três números inteiros e exiba a média aritmética. Se a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso contrário, exiba a mensagem "Reprovado".
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+        let num3 = parseInt(prompt("Digite o terceiro número:"));
+        let media = (num1 + num2 + num3) / 3;
+        document.write("Número 1: " + num1 + "<br>");
+        document.write("Número 2: " + num2 + "<br>");
+        document.write("Número 3: " + num3 + "<br>");
+        document.write("Média: " + media.toFixed(2) + "<br>");
+        if (media >= 7) {
+            document.write("Aprovado<br>");
+        } else {
+            document.write("Reprovado<br>");
+        }
     </script>
 </body>
 </html>

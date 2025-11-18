@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>103-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia uma matriz 3x3 de números inteiros e exiba o menor valor presente na matriz.
+        let matriz = [];
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 3; j++) {
+                matriz[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "]:"));
+            }
+        }
+        let menor = matriz[0][0];
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (matriz[i][j] < menor) {
+                    menor = matriz[i][j];
+                }
+            }
+        }
+        document.write("Menor valor na matriz: " + menor + "<br>");
     </script>
 </body>
 </html>

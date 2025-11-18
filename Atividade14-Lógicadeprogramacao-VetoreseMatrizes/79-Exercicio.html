@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>79-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário.
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let fatorial = 1;
+        for (let i = 1; i <= numero; i++) {
+            fatorial *= i;
+        }
+        document.write("Fatorial de " + numero + ": " + fatorial + "<br>");
     </script>
 </body>
 </html>

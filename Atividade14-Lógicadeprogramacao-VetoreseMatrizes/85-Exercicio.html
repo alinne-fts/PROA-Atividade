@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>85-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia 5 números inteiros e exiba o maior e o menor valor digitado.
+        let numeros = [];
+        for (let i = 0; i < 5; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+        }
+        let maior = numeros[0];
+        let menor = numeros[0];
+        for (let i = 1; i < 5; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+        }
+        document.write("Maior valor: " + maior + "<br>");
+        document.write("Menor valor: " + menor + "<br>");
     </script>
 </body>
 </html>

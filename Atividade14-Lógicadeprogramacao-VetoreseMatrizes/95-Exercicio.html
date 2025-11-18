@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>95-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia 5 nomes e exiba-os em ordem alfabética.
+        let nomes = [];
+        for (let i = 0; i < 5; i++) {
+            nomes[i] = prompt("Digite o " + (i + 1) + "º nome:");
+        }
+        for (let i = 0; i < 5; i++) {
+            for (let j = i + 1; j < 5; j++) {
+                if (nomes[i] > nomes[j]) {
+                    let temp = nomes[i];
+                    nomes[i] = nomes[j];
+                    nomes[j] = temp;
+                }
+            }
+        }
+        document.write("Nomes em ordem alfabética:<br>");
+        for (let i = 0; i < 5; i++) {
+            document.write(nomes[i] + "<br>");
+        }
     </script>
 </body>
 </html>

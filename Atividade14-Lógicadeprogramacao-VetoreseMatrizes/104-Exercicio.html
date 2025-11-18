@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>104-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia uma matriz 3x3 de números inteiros e verifique se ela é simétrica (igual à sua transposta).
+        let matriz = [];
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 3; j++) {
+                matriz[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "]:"));
+            }
+        }
+        let simetrica = true;
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (matriz[i][j] != matriz[j][i]) {
+                    simetrica = false;
+                    break;
+                }
+            }
+            if (!simetrica) break;
+        }
+        if (simetrica) {
+            document.write("A matriz é SIMÉTRICA.<br>");
+        } else {
+            document.write("A matriz NÃO é simétrica.<br>");
+        }
     </script>
 </body>
 </html>

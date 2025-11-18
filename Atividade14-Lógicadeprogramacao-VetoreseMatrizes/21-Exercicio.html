@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>21-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.
+        let quantidade = parseInt(prompt("Quantas pessoas deseja cadastrar?"));
+        let menores = 0;
+        let maiores = 0;
+        for (let i = 1; i <= quantidade; i++) {
+            let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+            if (idade < 18) {
+                menores++;
+            } else {
+                maiores++;
+            }
+        }
+        document.write("Total de pessoas: " + quantidade + "<br>");
+        document.write("Menores de idade: " + menores + "<br>");
+        document.write("Maiores de idade: " + maiores + "<br>");
     </script>
 </body>
 </html>

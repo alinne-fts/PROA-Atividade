@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>84-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia 5 números inteiros e exiba quantos deles são pares.
+        let numeros = [];
+        let pares = 0;
+        for (let i = 0; i < 5; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numeros[i] % 2 == 0) {
+                pares++;
+            }
+        }
+        document.write("Quantidade de números pares: " + pares + "<br>");
     </script>
 </body>
 </html>

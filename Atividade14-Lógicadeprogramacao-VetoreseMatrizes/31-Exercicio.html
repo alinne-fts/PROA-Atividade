@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>31-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe.
+        let salarioMinimo = parseFloat(prompt("Digite o valor do salário-mínimo:"));
+        let salario = parseFloat(prompt("Digite o salário do funcionário:"));
+        let quantidade = salario / salarioMinimo;
+        document.write("Salário-mínimo: R$ " + salarioMinimo.toFixed(2) + "<br>");
+        document.write("Salário do funcionário: R$ " + salario.toFixed(2) + "<br>");
+        document.write("O funcionário recebe " + quantidade.toFixed(2) + " salários-mínimos.<br>");
     </script>
 </body>
 </html>

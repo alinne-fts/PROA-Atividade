@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>58-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".
+        let limite = parseInt(prompt("Digite um número inteiro:"));
+        let a = 0, b = 1;
+        document.write("Sequência de Fibonacci até " + limite + ":<br>");
+        document.write(a + ", ");
+        do {
+            if (b <= limite) {
+                document.write(b + ", ");
+                let proximo = a + b;
+                a = b;
+                b = proximo;
+            } else {
+                break;
+            }
+        } while (b <= limite);
     </script>
 </body>
 </html>

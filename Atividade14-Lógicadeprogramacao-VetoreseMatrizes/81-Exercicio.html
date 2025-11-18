@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>81-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia 5 números inteiros e exiba-os na ordem inversa em que foram digitados.
+        let numeros = [];
+        for (let i = 0; i < 5; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+        }
+        document.write("Números na ordem inversa:<br>");
+        for (let i = 4; i >= 0; i--) {
+            document.write(numeros[i] + "<br>");
+        }
     </script>
 </body>
 </html>

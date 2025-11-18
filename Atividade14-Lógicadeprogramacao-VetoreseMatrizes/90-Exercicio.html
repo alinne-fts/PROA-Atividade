@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>90-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia 5 números inteiros e verifique se algum deles é igual a zero.
+        let numeros = [];
+        let temZero = false;
+        for (let i = 0; i < 5; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numeros[i] == 0) {
+                temZero = true;
+            }
+        }
+        if (temZero) {
+            document.write("Existe pelo menos um número igual a zero.<br>");
+        } else {
+            document.write("Não há números iguais a zero.<br>");
+        }
     </script>
 </body>
 </html>

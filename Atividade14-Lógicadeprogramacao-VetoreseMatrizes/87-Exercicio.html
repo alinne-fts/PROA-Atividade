@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>87-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia 10 números inteiros e exiba quantos deles são positivos.
+        let numeros = [];
+        let positivos = 0;
+        for (let i = 0; i < 10; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numeros[i] > 0) {
+                positivos++;
+            }
+        }
+        document.write("Quantidade de números positivos: " + positivos + "<br>");
     </script>
 </body>
 </html>

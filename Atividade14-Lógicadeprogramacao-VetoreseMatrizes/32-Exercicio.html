@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>32-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia a nota de um aluno em uma prova e exiba a sua conceituação conforme a tabela de notas.
+        let nota = parseFloat(prompt("Digite a nota do aluno (0 a 10):"));
+        let conceito = "";
+        if (nota >= 9) {
+            conceito = "Excelente";
+        } else if (nota >= 7) {
+            conceito = "Bom";
+        } else if (nota >= 5) {
+            conceito = "Regular";
+        } else {
+            conceito = "Insuficiente";
+        }
+        document.write("Nota: " + nota + "<br>");
+        document.write("Conceito: " + conceito + "<br>");
     </script>
 </body>
 </html>

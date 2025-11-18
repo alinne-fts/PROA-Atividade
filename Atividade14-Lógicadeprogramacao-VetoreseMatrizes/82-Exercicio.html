@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>82-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia 10 números inteiros e exiba a soma deles.
+        let numeros = [];
+        let soma = 0;
+        for (let i = 0; i < 10; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            soma += numeros[i];
+        }
+        document.write("Soma dos 10 números: " + soma + "<br>");
     </script>
 </body>
 </html>

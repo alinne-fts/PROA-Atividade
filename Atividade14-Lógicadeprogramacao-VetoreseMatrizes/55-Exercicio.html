@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>55-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "do-while".
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let i = 1;
+        document.write("Tabuada do " + numero + ":<br>");
+        do {
+            document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+            i++;
+        } while (i <= 10);
     </script>
 </body>
 </html>

@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>29-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia o nome e a nota de um aluno e exiba sua situação na disciplina. Se a nota for maior ou igual a 7, o aluno está aprovado. Caso contrário, está em recuperação.
+        let nome = prompt("Digite o nome do aluno:");
+        let nota = parseFloat(prompt("Digite a nota do aluno:"));
+        document.write("Aluno: " + nome + "<br>");
+        document.write("Nota: " + nota + "<br>");
+        if (nota >= 7) {
+            document.write("Situação: APROVADO<br>");
+        } else {
+            document.write("Situação: EM RECUPERAÇÃO<br>");
+        }
     </script>
 </body>
 </html>

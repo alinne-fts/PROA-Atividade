@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>51-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.
+        let nome = "";
+        let somaIdades = 0;
+        let quantidade = 0;
+        while (nome != "fim") {
+            nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):").toLowerCase();
+            if (nome != "fim") {
+                let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+                somaIdades += idade;
+                quantidade++;
+            }
+        }
+        if (quantidade > 0) {
+            let media = somaIdades / quantidade;
+            document.write("Total de pessoas: " + quantidade + "<br>");
+            document.write("Soma das idades: " + somaIdades + "<br>");
+            document.write("Média das idades: " + media.toFixed(2) + "<br>");
+        } else {
+            document.write("Nenhuma pessoa foi cadastrada.<br>");
+        }
     </script>
 </body>
 </html>

@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>59-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a média das idades.
+        let i = 1;
+        let somaIdades = 0;
+        do {
+            let nome = prompt("Digite o nome da pessoa " + i + ":");
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            somaIdades += idade;
+            i++;
+        } while (i <= 5);
+        let media = somaIdades / 5;
+        document.write("Soma das idades: " + somaIdades + "<br>");
+        document.write("Média das idades: " + media + "<br>");
     </script>
 </body>
 </html>

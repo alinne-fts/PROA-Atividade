@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>42-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let i = 2;
+        let primo = true;
+        if (numero < 2) {
+            primo = false;
+        } else {
+            while (i < numero) {
+                if (numero % i == 0) {
+                    primo = false;
+                    break;
+                }
+                i++;
+            }
+        }
+        if (primo) {
+            document.write(numero + " é um número PRIMO.<br>");
+        } else {
+            document.write(numero + " NÃO é um número primo.<br>");
+        }
     </script>
 </body>
 </html>

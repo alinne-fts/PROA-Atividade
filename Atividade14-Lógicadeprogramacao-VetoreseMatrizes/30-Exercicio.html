@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>30-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia o número de maçãs compradas e exiba o valor total a ser pago. O preço das maçãs é de R$ 0,50 cada se a quantidade for menor que 12 e R$ 0,40 cada se a quantidade for igual ou maior que 12.
+        let quantidade = parseInt(prompt("Digite o número de maçãs compradas:"));
+        let preco = 0;
+        if (quantidade < 12) {
+            preco = 0.50;
+        } else {
+            preco = 0.40;
+        }
+        let total = quantidade * preco;
+        document.write("Quantidade de maçãs: " + quantidade + "<br>");
+        document.write("Preço unitário: R$ " + preco.toFixed(2) + "<br>");
+        document.write("Valor total: R$ " + total.toFixed(2) + "<br>");
     </script>
 </body>
 </html>

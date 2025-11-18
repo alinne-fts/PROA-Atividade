@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>46-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "while".
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let i = 1;
+        let soma = 0;
+        while (i <= numero) {
+            if (i % 2 == 0) {
+                soma += i;
+            }
+            i++;
+        }
+        document.write("Soma dos números pares de 1 a " + numero + ": " + soma + "<br>");
     </script>
 </body>
 </html>

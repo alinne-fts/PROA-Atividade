@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>108-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia uma matriz 4x4 de números inteiros e exiba o maior valor presente em cada linha.
+        let matriz = [];
+        for (let i = 0; i < 4; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 4; j++) {
+                matriz[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "]:"));
+            }
+        }
+        document.write("Maior valor de cada linha:<br>");
+        for (let i = 0; i < 4; i++) {
+            let maior = matriz[i][0];
+            for (let j = 1; j < 4; j++) {
+                if (matriz[i][j] > maior) {
+                    maior = matriz[i][j];
+                }
+            }
+            document.write("Linha " + (i + 1) + ": " + maior + "<br>");
+        }
     </script>
 </body>
 </html>

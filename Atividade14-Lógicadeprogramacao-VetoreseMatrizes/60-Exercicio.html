@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>60-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "do-while".
+        let a = 0, b = 1;
+        let count = 0;
+        document.write("Primeiros 20 números da sequência de Fibonacci:<br>");
+        do {
+            document.write(a + ", ");
+            let proximo = a + b;
+            a = b;
+            b = proximo;
+            count++;
+        } while (count < 20);
     </script>
 </body>
 </html>

@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>96-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia uma matriz 3x3 de números inteiros e exiba a matriz na tela.
+        let matriz = [];
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 3; j++) {
+                matriz[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "]:"));
+            }
+        }
+        document.write("Matriz 3x3:<br>");
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                document.write(matriz[i][j] + " ");
+            }
+            document.write("<br>");
+        }
     </script>
 </body>
 </html>

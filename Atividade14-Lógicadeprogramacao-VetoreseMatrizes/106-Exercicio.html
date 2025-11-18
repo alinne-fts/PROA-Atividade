@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>106-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia duas matrizes 2x2 de números inteiros e verifique se elas são iguais.
+        let matriz1 = [];
+        let matriz2 = [];
+        document.write("Matriz 1:<br>");
+        for (let i = 0; i < 2; i++) {
+            matriz1[i] = [];
+            for (let j = 0; j < 2; j++) {
+                matriz1[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "] da matriz 1:"));
+            }
+        }
+        document.write("Matriz 2:<br>");
+        for (let i = 0; i < 2; i++) {
+            matriz2[i] = [];
+            for (let j = 0; j < 2; j++) {
+                matriz2[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "] da matriz 2:"));
+            }
+        }
+        let iguais = true;
+        for (let i = 0; i < 2; i++) {
+            for (let j = 0; j < 2; j++) {
+                if (matriz1[i][j] != matriz2[i][j]) {
+                    iguais = false;
+                    break;
+                }
+            }
+            if (!iguais) break;
+        }
+        if (iguais) {
+            document.write("As matrizes são IGUAIS.<br>");
+        } else {
+            document.write("As matrizes NÃO são iguais.<br>");
+        }
     </script>
 </body>
 </html>

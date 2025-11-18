@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>91-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia 10 números inteiros e exiba a soma dos valores positivos e a soma dos valores negativos.
+        let numeros = [];
+        let somaPositivos = 0;
+        let somaNegativos = 0;
+        for (let i = 0; i < 10; i++) {
+            numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numeros[i] > 0) {
+                somaPositivos += numeros[i];
+            } else if (numeros[i] < 0) {
+                somaNegativos += numeros[i];
+            }
+        }
+        document.write("Soma dos valores positivos: " + somaPositivos + "<br>");
+        document.write("Soma dos valores negativos: " + somaNegativos + "<br>");
     </script>
 </body>
 </html>

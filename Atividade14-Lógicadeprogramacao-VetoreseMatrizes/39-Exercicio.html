@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>39-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia 5 números inteiros usando o loop "while" e exiba a média aritmética dos valores lidos.
+        let i = 1;
+        let soma = 0;
+        while (i <= 5) {
+            let numero = parseInt(prompt("Digite o " + i + "º número:"));
+            soma += numero;
+            i++;
+        }
+        let media = soma / 5;
+        document.write("Soma dos números: " + soma + "<br>");
+        document.write("Média aritmética: " + media + "<br>");
     </script>
 </body>
 </html>

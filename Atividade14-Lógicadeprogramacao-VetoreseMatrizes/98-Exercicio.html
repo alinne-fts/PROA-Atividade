@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>98-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia uma matriz 3x3 de números inteiros e exiba a soma dos elementos da diagonal principal.
+        let matriz = [];
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 3; j++) {
+                matriz[i][j] = parseInt(prompt("Digite o elemento [" + (i + 1) + "][" + (j + 1) + "]:"));
+            }
+        }
+        let somaDiagonal = 0;
+        for (let i = 0; i < 3; i++) {
+            somaDiagonal += matriz[i][i];
+        }
+        document.write("Soma da diagonal principal: " + somaDiagonal + "<br>");
     </script>
 </body>
 </html>

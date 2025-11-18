@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>27-Exercicio</title>
 </head>
 <body>
     <script>
         //Crie um programa que leia a idade de uma pessoa e seu sexo (M ou F) e exiba uma mensagem indicando se ela pode ou não se aposentar. Homens podem se aposentar com 65 anos ou mais, e mulheres com 60 anos ou mais.
+        let idade = parseInt(prompt("Digite a idade:"));
+        let sexo = prompt("Digite o sexo (M ou F):").toUpperCase();
+        document.write("Idade: " + idade + " anos<br>");
+        document.write("Sexo: " + sexo + "<br>");
+        if (sexo == "M") {
+            if (idade >= 65) {
+                document.write("Pode se aposentar!<br>");
+            } else {
+                document.write("Ainda não pode se aposentar. Faltam " + (65 - idade) + " anos.<br>");
+            }
+        } else if (sexo == "F") {
+            if (idade >= 60) {
+                document.write("Pode se aposentar!<br>");
+            } else {
+                document.write("Ainda não pode se aposentar. Faltam " + (60 - idade) + " anos.<br>");
+            }
+        } else {
+            document.write("Sexo inválido!<br>");
+        }
     </script>
 </body>
 </html>

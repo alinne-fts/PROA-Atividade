@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>26-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente.
+        let codigo = parseInt(prompt("Digite o código do produto (1, 2, 3, 4 ou 5):"));
+        let quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+        let preco = 0;
+        switch (codigo) {
+            case 1:
+                preco = 10.00;
+                break;
+            case 2:
+                preco = 15.50;
+                break;
+            case 3:
+                preco = 8.75;
+                break;
+            case 4:
+                preco = 12.00;
+                break;
+            case 5:
+                preco = 20.00;
+                break;
+            default:
+                document.write("Código inválido!<br>");
+        }
+        if (preco > 0) {
+            let total = preco * quantidade;
+            document.write("Código do produto: " + codigo + "<br>");
+            document.write("Preço unitário: R$ " + preco.toFixed(2) + "<br>");
+            document.write("Quantidade: " + quantidade + "<br>");
+            document.write("Valor total: R$ " + total.toFixed(2) + "<br>");
+        }
     </script>
 </body>
 </html>
