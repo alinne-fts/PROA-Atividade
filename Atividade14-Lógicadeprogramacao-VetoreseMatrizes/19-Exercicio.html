@@ -8,6 +8,19 @@
 <body>
     <script>
         //Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.
+        let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        let nota3 = parseFloat(prompt("Digite a terceira nota:"));
+        let media = (nota1 + nota2 + nota3) / 3;
+        document.write("Nota 1: " + nota1 + "<br>");
+        document.write("Nota 2: " + nota2 + "<br>");
+        document.write("Nota 3: " + nota3 + "<br>");
+        document.write("Média: " + media.toFixed(2) + "<br>");
+        if (media >= 7) {
+            document.write("Situação: APROVADO<br>");
+        } else {
+            document.write("Situação: REPROVADO<br>");
+        }
     </script>
 </body>
 </html>

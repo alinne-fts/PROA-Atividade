@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>04-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que receba três notas de um aluno (cada nota de 0 a 10) e calcule a média ponderada considerando pesos 2, 3 e 5 para as notas, respectivamente.
+        let nota1 = parseFloat(prompt("Digite a primeira nota (0 a 10):"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota (0 a 10):"));
+        let nota3 = parseFloat(prompt("Digite a terceira nota (0 a 10):"));
+        let peso1 = 2;
+        let peso2 = 3;
+        let peso3 = 5;
+        let somaPesos = peso1 + peso2 + peso3;
+        let mediaPonderada = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / somaPesos;
+        document.write("Nota 1: " + nota1 + " (peso " + peso1 + ")<br>");
+        document.write("Nota 2: " + nota2 + " (peso " + peso2 + ")<br>");
+        document.write("Nota 3: " + nota3 + " (peso " + peso3 + ")<br>");
+        document.write("Média ponderada: " + mediaPonderada.toFixed(2) + "<br>");
     </script>
 </body>
 </html>

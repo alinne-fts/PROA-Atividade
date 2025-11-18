@@ -8,6 +8,16 @@
 <body>
     <script>
         //Escreva um programa que leia a idade de uma pessoa e exiba uma mensagem indicando se ela é criança, adolescente, adulto ou idoso.
+        let idade = parseInt(prompt("Digite a idade:"));
+        if (idade < 12) {
+            document.write("Idade: " + idade + " anos - CRIANÇA<br>");
+        } else if (idade < 18) {
+            document.write("Idade: " + idade + " anos - ADOLESCENTE<br>");
+        } else if (idade < 60) {
+            document.write("Idade: " + idade + " anos - ADULTO<br>");
+        } else {
+            document.write("Idade: " + idade + " anos - IDOSO<br>");
+        }
     </script>
 </body>
 </html>

@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>02-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia o raio de um círculo e calcule sua área e perímetro.
+        let raio = parseFloat(prompt("Digite o raio do círculo:"));
+        let area = Math.PI * raio * raio;
+        let perimetro = 2 * Math.PI * raio;
+        document.write("Raio: " + raio + "<br>");
+        document.write("Área: " + area.toFixed(2) + "<br>");
+        document.write("Perímetro: " + perimetro.toFixed(2) + "<br>");
     </script>
 </body>
 </html>

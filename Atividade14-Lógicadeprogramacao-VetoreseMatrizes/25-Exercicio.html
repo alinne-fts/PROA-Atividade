@@ -8,6 +8,13 @@
 <body>
     <script>
         //Faça um programa que leia o número de faltas de um aluno em uma disciplina e exiba sua situação. Se o número de faltas for maior que 15, ele é reprovado por falta.
+        let faltas = parseInt(prompt("Digite o número de faltas:"));
+        document.write("Número de faltas: " + faltas + "<br>");
+        if (faltas > 15) {
+            document.write("Situação: REPROVADO POR FALTA<br>");
+        } else {
+            document.write("Situação: APROVADO (dentro do limite de faltas)<br>");
+        }
     </script>
 </body>
 </html>

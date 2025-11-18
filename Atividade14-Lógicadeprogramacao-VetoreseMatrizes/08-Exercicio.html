@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>08-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+        document.write("Valores ANTES da troca:<br>");
+        document.write("Número 1: " + num1 + "<br>");
+        document.write("Número 2: " + num2 + "<br>");
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
+        document.write("<br>Valores DEPOIS da troca:<br>");
+        document.write("Número 1: " + num1 + "<br>");
+        document.write("Número 2: " + num2 + "<br>");
     </script>
 </body>
 </html>

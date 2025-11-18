@@ -8,6 +8,14 @@
 <body>
     <script>
         //Escreva um programa que calcule a média aritmética entre três números reais inseridos pelo usuário.
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+        let num3 = parseFloat(prompt("Digite o terceiro número:"));
+        let media = (num1 + num2 + num3) / 3;
+        document.write("Número 1: " + num1 + "<br>");
+        document.write("Número 2: " + num2 + "<br>");
+        document.write("Número 3: " + num3 + "<br>");
+        document.write("Média aritmética: " + media.toFixed(2) + "<br>");
     </script>
 </body>
 </html>

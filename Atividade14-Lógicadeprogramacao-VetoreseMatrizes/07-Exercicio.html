@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>07-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que receba o salário base de um funcionário e calcule o seu salário líquido, considerando que o funcionário recebe 5% de comissão sobre o salário base.
+        let salarioBase = parseFloat(prompt("Digite o salário base do funcionário:"));
+        let comissao = salarioBase * 0.05;
+        let salarioLiquido = salarioBase + comissao;
+        document.write("Salário base: R$ " + salarioBase.toFixed(2) + "<br>");
+        document.write("Comissão (5%): R$ " + comissao.toFixed(2) + "<br>");
+        document.write("Salário líquido: R$ " + salarioLiquido.toFixed(2) + "<br>");
     </script>
 </body>
 </html>

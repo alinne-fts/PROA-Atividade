@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tidmo - Faxinas Residenciais e Empresariais</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header_tidmo">
+        <div id="logo_container">
+            <div id="logo_icon">tidmo</div>
+            <h1 id="logo_texto">tidmo</h1>
+        </div>
+        
+        <nav id="menu_navegacao">
+            <a href="#" class="link_menu">Para você</a>
+            <a href="#" class="link_menu">Para empresa</a>
+            <a href="#" class="link_menu">Trabalhe Conosco</a>
+            <a href="#" class="link_menu">Dúvidas</a>
+        </nav>
+        
+        <div id="botoes_header">
+            <button id="botao_agendar" class="botao_primario">Agendar faxina</button>
+            <button id="botao_entrar" class="botao_secundario">Entrar</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero_section">
+        <div id="conteudo_hero">
+            <h2 id="titulo_hero">
+                Contrate <span id="destaque_faxinas">faxinas</span> residenciais e empresariais em poucos cliques
+            </h2>
+            <p id="subtitulo_hero">Encontre as melhores profissionais de limpeza da sua região</p>
+            
+            <div id="campo_busca">
+                <input type="text" id="campo_cep" placeholder="Digite seu CEP">
+                <button id="botao_ver_valores" class="botao_primario">Ver valores</button>
+            </div>
+            
+            <div id="preco_info">
+                Faxinas a partir de R$ 99,90
+            </div>
+        </div>
+        
+        <div id="imagem_hero">
+            <div id="decoracao_fundo"></div>
+            <img src="img/faxineira.jpg" alt="Profissional de limpeza" id="foto_profissional">
+            
+            <div class="icone_decorativo" id="icone_superior">
+                <img src="img/icone-limpeza.png" alt="Ícone limpeza">
+            </div>
+            
+            <div class="icone_decorativo" id="icone_meio">
+                <img src="img/icone-estrelas.png" alt="Ícone estrelas">
+            </div>
+            
+            <div class="icone_decorativo" id="icone_inferior">
+                <img src="img/icone-mao.png" alt="Ícone mão">
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTATISTICAS -->
+    <section id="estatisticas_section">
+        <div id="container_estatisticas">
+            <div class="item_estatistica">
+                <div class="icone_estatistica">
+                    <img src="img/icone-localizacao.png" alt="Localização">
+                </div>
+                <p class="texto_estatistica">16 cidades atendidas</p>
+            </div>
+            
+            <div class="separador"></div>
+            
+            <div class="item_estatistica">
+                <div class="icone_estatistica">
+                    <img src="img/icone-esfregão.png" alt="Esfregão">
+                </div>
+                <p class="texto_estatistica">+100 mil serviços realizados</p>
+            </div>
+            
+            <div class="separador"></div>
+            
+            <div class="item_estatistica">
+                <div class="icone_estatistica">
+                    <img src="img/icone-check.png" alt="Check">
+                </div>
+                <p class="texto_estatistica">Embaixadoras do bem-estar selecionadas e treinadas</p>
+            </div>
+            
+            <div class="separador"></div>
+            
+            <div class="item_estatistica">
+                <div class="icone_estatistica">
+                    <img src="img/icone-lampada.png" alt="Lâmpada">
+                </div>
+                <p class="texto_estatistica">4 anos consecutivos entre as melhores de Inovação e Impacto Social SEBRAE RN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUÇÕES PERSONALIZADAS -->
+    <section id="solucoes_section">
+        <div id="container_solucoes">
+            <h2 id="titulo_solucoes">Soluções personalizadas para suas necessidades</h2>
+            
+            <div id="botoes_tipo">
+                <button id="botao_lar" class="botao_tipo ativo">Para seu lar</button>
+                <button id="botao_empresa" class="botao_tipo">Para sua empresa</button>
+            </div>
+            
+            <div id="container_carousel">
+                <button id="seta_esquerda" class="seta_nav">
+                    <span>←</span>
+                </button>
+                
+                <div id="carousel_cards">
+                    <div class="card_servico">
+                        <div class="imagem_card">
+                            <img src="img/faxina_padrao.jpg" alt="Faxina Padrão">
+                            <div class="icone_card">
+                                <img src="img/icone-mao-limpeza.png" alt="Ícone limpeza">
+                            </div>
+                        </div>
+                        <div class="conteudo_card">
+                            <h3 class="titulo_card">Faxina Padrão</h3>
+                            <ul class="lista_servico">
+                                <li>Para sua rotina</li>
+                                <li>A partir de 4 cômodos</li>
+                            </ul>
+                            <button class="botao_agendar_servico">Agendar serviço</button>
+                            <p class="preco_servico">a partir de <strong>R$ 117,90</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="card_servico">
+                        <div class="imagem_card">
+                            <img src="img/faxina_pre_mudanca.jpg" alt="Faxina Pré-mudança">
+                            <div class="icone_card">
+                                <img src="img/icone-casa-mudanca.png" alt="Ícone mudança">
+                            </div>
+                        </div>
+                        <div class="conteudo_card">
+                            <h3 class="titulo_card">Faxina Pré-mudança</h3>
+                            <ul class="lista_servico">
+                                <li>Para seu novo lar</li>
+                                <li>A partir de 4 cômodos</li>
+                            </ul>
+                            <button class="botao_agendar_servico">Agendar serviço</button>
+                            <p class="preco_servico">a partir de <strong>R$ 152,90</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="card_servico">
+                        <div class="imagem_card">
+                            <img src="img/faxina_complexa.jpg" alt="Faxina Complexa">
+                            <div class="icone_card">
+                                <img src="img/icone-casa-brilhante.png" alt="Ícone complexa">
+                            </div>
+                        </div>
+                        <div class="conteudo_card">
+                            <h3 class="titulo_card">Faxina Complexa</h3>
+                            <ul class="lista_servico">
+                                <li>Para uma limpeza pesada</li>
+                                <li>A partir de 4 cômodos</li>
+                            </ul>
+                            <button class="botao_agendar_servico">Agendar serviço</button>
+                            <p class="preco_servico">a partir de <strong>R$ 158,90</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="seta_direita" class="seta_nav">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO CONTRATAR SUA FAXINA -->
+    <section id="como_contratar_section">
+        <div id="container_contratar">
+            <h2 id="titulo_contratar">Como contratar sua faxina?</h2>
+            
+            <div id="passos_container">
+                <div class="passo_item">
+                    <div class="passo_numero">1º PASSO</div>
+                    <div class="passo_icone">
+                        <img src="img/icon_list.png" alt="Escolha o tipo de serviço">
+                    </div>
+                    <h3 class="passo_titulo">Escolha o tipo de serviço</h3>
+                    <p class="passo_descricao">Selecione o tipo de limpeza que melhor atende às suas necessidades, seja limpeza padrão, pesada, passadoria, ou qualquer outro serviço adicional que oferecemos.</p>
+                </div>
+                
+                <div class="linha_conexao"></div>
+
+                <div class="passo_item">
+                    <div class="passo_numero">2º PASSO</div>
+                    <div class="passo_icone">
+                        <img src="img/icon_calendar.png" alt="Personalize os detalhes">
+                    </div>
+                    <h3 class="passo_titulo">Personalize os detalhes</h3>
+                    <p class="passo_descricao">Informe seu endereço, escolha a data e horário que melhor se encaixam na sua rotina, e adicione qualquer instrução especial que nossos profissionais precisam saber.</p>
+                </div>
+
+                <div class="linha_conexao"></div>
+                
+                <div class="passo_item">
+                    <div class="passo_numero">3º PASSO</div>
+                    <div class="passo_icone">
+                        <img src="img/icon_money.png" alt="Agora é só finalizar e relaxar!">
+                    </div>
+                    <h3 class="passo_titulo">Agora é só finalizar e relaxar!</h3>
+                    <p class="passo_descricao">Revise os detalhes do seu pedido, faça o pagamento online de forma segura e pronto! Agora é só aguardar enquanto cuidamos de tudo para você.</p>
+                </div>
+            </div>
+            
+            <div id="botao_agendar_container">
+                <button id="botao_agendar_faxina" class="botao_principal">Agendar faxina</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

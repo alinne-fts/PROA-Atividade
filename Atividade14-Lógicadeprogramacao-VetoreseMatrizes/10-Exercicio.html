@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>10-Exercicio</title>
 </head>
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba a sua tabuada de multiplicação até o décimo valor.
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        document.write("Tabuada de multiplicação do " + numero + ":<br>");
+        for (let i = 1; i <= 10; i++) {
+            document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+        }
     </script>
 </body>
 </html>

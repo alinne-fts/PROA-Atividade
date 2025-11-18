@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-Exercicio</title>
+    <title>05-Exercicio</title>
 </head>
 <body>
     <script>
         //Escreva um programa que leia o preço de um produto e a quantidade comprada, e calcule o valor total a ser pago com desconto de 10% se a quantidade for maior que 10 unidades.
+        let preco = parseFloat(prompt("Digite o preço do produto:"));
+        let quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+        let valorTotal = preco * quantidade;
+        let desconto = 0;
+        if (quantidade > 10) {
+            desconto = valorTotal * 0.10;
+            valorTotal = valorTotal - desconto;
+            document.write("Quantidade maior que 10 unidades. Desconto de 10% aplicado!<br>");
+        }
+        document.write("Preço unitário: R$ " + preco.toFixed(2) + "<br>");
+        document.write("Quantidade: " + quantidade + "<br>");
+        if (desconto > 0) {
+            document.write("Desconto: R$ " + desconto.toFixed(2) + "<br>");
+        }
+        document.write("Valor total a ser pago: R$ " + valorTotal.toFixed(2) + "<br>");
     </script>
 </body>
 </html>
