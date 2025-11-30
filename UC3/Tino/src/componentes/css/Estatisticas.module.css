@@ -1,0 +1,38 @@
+#estatisticas_section {
+    position: relative;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #ffffff;
+}
+
+#container_estatisticas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item_estatistica {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    padding: 20px;
+}
+
+.texto_estatistica {
+    position: relative;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.4;
+}
+
+.separador {
+    position: relative;
+    width: 1px;
+    height: 60px;
+    background-color: #e0e0e0;
+}

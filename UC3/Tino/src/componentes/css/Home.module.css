@@ -1,0 +1,158 @@
+#hero_section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #ffffff;
+}
+
+#conteudo_hero {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#titulo_hero {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+#destaque_faxinas {
+    position: relative;
+    color: #4A90E2;
+}
+
+#subtitulo_hero {
+    position: relative;
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+#campo_busca {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+}
+
+#campo_cep {
+    position: relative;
+    flex: 1;
+    height: 60px;
+    padding: 0 24px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+#campo_cep::placeholder {
+    color: #999999;
+}
+
+#campo_cep:focus {
+    outline: none;
+    border-color: #4A90E2;
+}
+
+#botao_ver_valores {
+    position: relative;
+    height: 60px;
+    padding: 0 32px;
+    background-color: #4A90E2;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: -50px;
+}
+
+#botao_ver_valores:hover {
+    background-color: #357ABD;
+}
+
+#preco_info {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+#imagem_hero {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#decoracao_fundo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.15) 0%, rgba(74, 144, 226, 0) 70%);
+    border-radius: 50%;
+}
+
+#foto_profissional {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.icone_decorativo {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.icone_decorativo img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+#icone_superior {
+    top: 15%;
+    left: 10%;
+}
+
+#icone_meio {
+    top: 50%;
+    right: 5%;
+}
+
+#icone_inferior {
+    bottom: 15%;
+    right: 15%;
+}

@@ -1,0 +1,139 @@
+.faqSection {
+  position: relative;
+  width: 100%;
+  padding: 80px 60px;
+  background-color: #f8fafc;
+}
+
+.containerFaq {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tituloFaq {
+  position: relative;
+  font-size: 42px;
+  font-weight: 700;
+  color: #4A90E2;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.subtituloFaq {
+  position: relative;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tabsFaq {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tabFaq {
+  position: relative;
+  padding: 14px 28px;
+  background-color: #ffffff;
+  border: 2px solid #4A90E2;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4A90E2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabFaq:hover {
+  background-color: rgba(74, 144, 226, 0.05);
+}
+
+.tabFaqAtivo {
+  background-color: #4A90E2;
+  color: #ffffff;
+  border-color: #4A90E2;
+}
+
+.listaPerguntas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.categoriaPerguntas {
+  display: none;
+}
+
+.categoriaPerguntasAtivo {
+  display: block;
+}
+
+.itemPergunta {
+  position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.itemPergunta:last-child {
+  border-bottom: none;
+}
+
+.cabecalhoPergunta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cabecalhoPergunta:hover {
+  background-color: rgba(74, 144, 226, 0.03);
+}
+
+.iconeExpandir {
+  position: relative;
+  font-size: 28px;
+  font-weight: 300;
+  color: #4A90E2;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.iconeExpandirAtivo {
+  transform: rotate(45deg);
+}
+
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background-color: #f9fbfd;
+}
+
+.respostaAtivo {
+  max-height: 300px;
+  padding: 0 28px 24px;
+}
+
+.textoResposta {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+

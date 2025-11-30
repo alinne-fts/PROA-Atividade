@@ -1,0 +1,168 @@
+#solucoes_section {
+    position: relative;
+    width: 100%;
+    padding: 80px 60px;
+    background-color: #f8fafc;
+}
+
+#container_solucoes {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#titulo_solucoes {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#botoes_tipo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.botao_tipo {
+    position: relative;
+    padding: 14px 32px;
+    background-color: #ffffff;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao_tipo:hover,
+.botao_tipo.ativo {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#container_carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+}
+
+.seta_nav {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(74, 144, 226, 0.1);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #4A90E2;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.seta_nav:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+    transform: scale(1.1);
+}
+
+#carousel_cards {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    flex: 1;
+}
+
+#carousel_cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card_servico {
+    position: relative;
+    min-width: 380px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.imagem_card {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.imagem_card img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo_card {
+    position: relative;
+    padding: 24px;
+}
+
+.titulo_card {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4A90E2;
+    margin-bottom: 16px;
+}
+
+.botao_agendar_servico {
+    position: relative;
+    width: 100%;
+    padding: 14px 24px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.botao_agendar_servico:hover {
+    background-color: #357ABD;
+}
+
+.preco_servico {
+    position: relative;
+    font-size: 16px;
+    color: #555555;
+    text-align: center;
+}
+
+.preco_servico strong {
+    position: relative;
+    font-size: 20px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
