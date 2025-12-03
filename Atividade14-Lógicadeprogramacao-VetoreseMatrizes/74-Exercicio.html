@@ -8,15 +8,15 @@
 <body>
     <script>
         //Crie um programa que leia o nome e a idade de 5 pessoas e exiba a média das idades.
-        let somaIdades = 0;
+        let totalIdade = 0;
+        let contador = 0;
         for (let i = 1; i <= 5; i++) {
             let nome = prompt("Digite o nome da pessoa " + i + ":");
             let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
-            somaIdades += idade;
+            totalIdade += idade;
         }
-        let media = somaIdades / 5;
-        document.write("Soma das idades: " + somaIdades + "<br>");
-        document.write("Média das idades: " + media + "<br>");
+        let mediaIdade = parseInt(totalIdade / 5);
+        document.write("A média das idades é: " + mediaIdade);
     </script>
 </body>
 </html>

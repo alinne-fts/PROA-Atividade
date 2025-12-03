@@ -10,12 +10,11 @@
         //Faça um programa que leia 5 números inteiros e exiba a média aritmética dos valores lidos.
         let soma = 0;
         for (let i = 1; i <= 5; i++) {
-            let numero = parseInt(prompt("Digite o " + i + "º número:"));
+            let numero = parseInt(prompt("Digite o " + i + " número inteiro:"));
             soma += numero;
         }
         let media = soma / 5;
-        document.write("Soma dos números: " + soma + "<br>");
-        document.write("Média aritmética: " + media + "<br>");
+        document.write("A média aritmética dos valores lidos é: " + media);
     </script>
 </body>
 </html>

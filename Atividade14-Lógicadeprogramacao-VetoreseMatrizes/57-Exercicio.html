@@ -8,24 +8,24 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".
-        let numero = parseInt(prompt("Digite um número inteiro:"));
-        let i = 2;
-        let primo = true;
-        if (numero < 2) {
-            primo = false;
+        let numero = parseInt(prompt("Digite um número inteiro para verificar se é primo:"));
+        if (numero <= 1) {
+            document.write(numero + " não é um número primo.");
         } else {
+            let i = 2;
+            let isPrime = true;
             do {
-                if (numero % i == 0) {
-                    primo = false;
+                if (numero % i === 0) {
+                    isPrime = false;
                     break;
                 }
                 i++;
-            } while (i < numero);
-        }
-        if (primo) {
-            document.write(numero + " é um número PRIMO.<br>");
-        } else {
-            document.write(numero + " NÃO é um número primo.<br>");
+            } while (i <= Math.sqrt(numero));
+            if (isPrime) {
+                document.write(numero + " é um número primo.");
+            } else {
+                document.write(numero + " não é um número primo.");
+            }
         }
     </script>
 </body>

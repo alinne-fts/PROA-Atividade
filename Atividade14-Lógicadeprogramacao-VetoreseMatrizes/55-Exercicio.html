@@ -8,11 +8,11 @@
 <body>
     <script>
         //Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "do-while".
-        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let numero = parseInt(prompt("Digite um número inteiro para ver a tabuada:"));
         let i = 1;
-        document.write("Tabuada do " + numero + ":<br>");
         do {
-            document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+            let resultado = numero * i;
+            document.write(numero + " x " + i + " = " + resultado + "<br>");
             i++;
         } while (i <= 10);
     </script>

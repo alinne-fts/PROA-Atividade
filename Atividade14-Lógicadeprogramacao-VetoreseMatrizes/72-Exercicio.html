@@ -9,22 +9,23 @@
     <script>
         //Faça um programa que leia um número inteiro e exiba se ele é um número primo.
         let numero = parseInt(prompt("Digite um número inteiro:"));
-        let primo = true;
-        if (numero < 2) {
-            primo = false;
+        let ehPrimo = true;
+        if (numero <= 1) {
+            ehPrimo = false;
         } else {
-            for (let i = 2; i < numero; i++) {
-                if (numero % i == 0) {
-                    primo = false;
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                    ehPrimo = false;
                     break;
                 }
             }
         }
-        if (primo) {
-            document.write(numero + " é um número PRIMO.<br>");
+        if (ehPrimo) {
+            document.write(numero + " é um número primo.");
         } else {
-            document.write(numero + " NÃO é um número primo.<br>");
+            document.write(numero + " não é um número primo.");
         }
+        
     </script>
 </body>
 </html>

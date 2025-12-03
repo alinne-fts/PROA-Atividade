@@ -9,13 +9,14 @@
     <script>
         //Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido.
         let numero = parseInt(prompt("Digite um número inteiro:"));
-        let soma = 0;
+        let somaPares = 0;
         for (let i = 1; i <= numero; i++) {
-            if (i % 2 == 0) {
-                soma += i;
+            if (i % 2 === 0) {
+                somaPares += i;
+                document.write(i + "<br>");
             }
         }
-        document.write("Soma dos números pares de 1 a " + numero + ": " + soma + "<br>");
+        document.write("A soma de todos os números pares entre 1 e " + numero + " é: " + somaPares);
     </script>
 </body>
 </html>

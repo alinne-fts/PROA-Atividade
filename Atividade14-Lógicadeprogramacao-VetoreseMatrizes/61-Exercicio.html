@@ -9,15 +9,15 @@
     <script>
         //Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "do-while".
         let numero = parseInt(prompt("Digite um número inteiro:"));
-        let i = 1;
         let soma = 0;
+        let contador = 1;
         do {
-            if (i % 2 == 0) {
-                soma += i;
+            if (contador % 2 === 0) {
+                soma += contador;
             }
-            i++;
-        } while (i <= numero);
-        document.write("Soma dos números pares de 1 a " + numero + ": " + soma + "<br>");
+            contador++;
+        } while (contador <= numero);
+        document.write("A soma de todos os números pares entre 1 e " + numero + " é: " + soma);
     </script>
 </body>
 </html>

@@ -8,19 +8,14 @@
 <body>
     <script>
         //Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".
-        let numero = parseInt(prompt("Digite um número inteiro:"));
-        let digitos = [];
-        let temp = numero;
+        let numero = prompt("Digite um número inteiro:");
+        let i = 0;
+        document.write("Dígitos do número " + numero + " separados:<br>");
         do {
-            digitos.push(temp % 10);
-            temp = Math.floor(temp / 10);
-        } while (temp > 0);
-        document.write("Número: " + numero + "<br>");
-        document.write("Dígitos (da direita para esquerda): ");
-        for (let i = 0; i < digitos.length; i++) {
-            document.write(digitos[i] + " ");
-        }
-        document.write("<br>");
+            document.write("[" + numero.charAt(i) + "]");
+            i++;
+        } while (i < numero.length);
+
     </script>
 </body>
 </html>

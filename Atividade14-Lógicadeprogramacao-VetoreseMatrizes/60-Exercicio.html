@@ -8,16 +8,16 @@
 <body>
     <script>
         //Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "do-while".
-        let a = 0, b = 1;
-        let count = 0;
-        document.write("Primeiros 20 números da sequência de Fibonacci:<br>");
+        let a = 0, b = 1, proximo;
+        let contador = 0;
+        document.write("Sequência de Fibonacci:<br>");
         do {
-            document.write(a + ", ");
-            let proximo = a + b;
+            document.write(a + "<br>");
+            proximo = a + b;
             a = b;
             b = proximo;
-            count++;
-        } while (count < 20);
+            contador++;
+        } while (contador < 20);
     </script>
 </body>
 </html>
