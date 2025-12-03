@@ -101,7 +101,15 @@ main{
     height:300px;    
 }
 
-#faixa_branco{
+#faixa_branco_vitrine{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+#faixa_blanck{
     position: relative;
     width: 100%;
     height: 370px;
@@ -133,6 +141,7 @@ main{
  
 .vitrine p {
     background-color: #fff;
+    
 }
 
 #faixa_marrom{
@@ -204,7 +213,6 @@ main{
     height: 120px;
     margin-top: 10px;
     background: #fff;
-
 }
 
 #alinhamento_vermelho{
