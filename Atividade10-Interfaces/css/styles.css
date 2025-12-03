@@ -15,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER YOUTUBE */
 #header_youtube{
     position: fixed;
     top: 0;
@@ -176,7 +175,6 @@ body {
     height: 24px;
 }
 
-/* CONTAINER PRINCIPAL */
 #container_principal{
     position: relative;
     width: 100%;
@@ -185,8 +183,7 @@ body {
     display: flex;
 }
 
-/* SIDEBAR */
-#sidebar{
+#navegador{
     position: relative;
     width: 240px;
     height: 100%;
@@ -195,7 +192,7 @@ body {
     overflow-y: auto;
 }
 
-.item_sidebar{
+.item{
     position: relative;
     width: 100%;
     height: 40px;
@@ -207,23 +204,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.item_sidebar:hover{
+.item:hover{
     background-color: #3f3f3f;
 }
 
-.item_sidebar.ativo{
-    background-color: #3f3f3f;
-    border-left: 3px solid #ff0000;
-}
 
-.secao_sidebar{
+.secao{
     position: relative;
     width: 100%;
     margin-top: 20px;
     padding: 0 24px;
 }
 
-.secao_sidebar h4{
+.secao h4{
     position: relative;
     font-size: 14px;
     color: #aaa;
@@ -232,30 +225,27 @@ body {
     letter-spacing: 0.5px;
 }
 
-.item_sidebar img{
+.item img{
     position: relative;
     width: 24px;
     height: 24px;
 }
 
-/* Imagens circulares para a seção de inscrições */
-.secao_sidebar .item_sidebar img{
+.secao .item img{
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Evitar quebra de linha no nome "Curso em video" */
-.secao_sidebar .item_sidebar span{
+.secao .item span{
     white-space: nowrap;
 }
 
-.item_sidebar span{
+.item span{
     position: relative;
     font-size: 14px;
     color: #fff;
 }
 
-/* CONTEÚDO PRINCIPAL */
 #conteudo_principal{
     position: relative;
     width: calc(100% - 240px);
@@ -265,7 +255,6 @@ body {
     overflow-y: auto;
 }
 
-/* FILTROS */
 #filtros{
     position: relative;
     width: 100%;
@@ -302,7 +291,6 @@ body {
     font-weight: 500;
 }
 
-/* GRID DE VÍDEOS */
 #grid_videos{
     position: relative;
     width: 100%;
@@ -398,125 +386,4 @@ body {
     position: relative;
     font-size: 14px;
     color: #aaa;
-}
-
-/* RESPONSIVIDADE */
-@media screen and (max-width: 1024px) {
-    #sidebar{
-        width: 72px;
-    }
-    
-    .item_sidebar span{
-        display: none;
-    }
-    
-    .item_sidebar{
-        justify-content: center;
-        padding: 0;
-    }
-    
-    #conteudo_principal{
-        width: calc(100% - 72px);
-    }
-    
-    #grid_videos{
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 16px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #header_youtube{
-        padding: 0 8px;
-    }
-    
-    #barra_pesquisa{
-        width: 200px;
-    }
-    
-    #menu_direito{
-        gap: 4px;
-    }
-    
-    .icone_menu{
-        width: 32px;
-        height: 32px;
-    }
-    
-    .icone_menu img{
-        width: 20px;
-        height: 20px;
-    }
-    
-    #sidebar{
-        display: none;
-    }
-    
-    #conteudo_principal{
-        width: 100%;
-        padding: 16px;
-    }
-    
-    #grid_videos{
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 12px;
-    }
-    
-    .thumbnail{
-        height: 140px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #header_youtube{
-        height: 48px;
-    }
-    
-    #container_principal{
-        height: calc(100vh - 48px);
-        margin-top: 48px;
-    }
-    
-    #barra_pesquisa{
-        width: 150px;
-    }
-    
-    #campo_pesquisa{
-        font-size: 14px;
-        padding: 0 12px;
-    }
-    
-    #conteudo_principal{
-        padding: 12px;
-    }
-    
-    #filtros{
-        height: 48px;
-        gap: 8px;
-        margin-bottom: 16px;
-    }
-    
-    .filtro{
-        height: 28px;
-        padding: 0 8px;
-        font-size: 12px;
-    }
-    
-    #grid_videos{
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    
-    .thumbnail{
-        height: 200px;
-    }
-    
-    .detalhes_video h3{
-        font-size: 14px;
-    }
-    
-    .canal_nome,
-    .visualizacoes{
-        font-size: 12px;
-    }
 }
